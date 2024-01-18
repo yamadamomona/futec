@@ -1,0 +1,77 @@
+#header{
+	/*headerを全画面で見せる*/
+	width:100%;
+	height: 100vh;
+	position: relative;
+} 
+
+#header:before{
+	/*headerの疑似要素に背景画像を指定*/
+	content:"";
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+	width:100%;
+	height: 100vh;
+	background:url("../img/top_pc.webp") no-repeat center;/*背景画像設定※オリジナル画像を設定してください*/
+	background-size:cover;
+	background-position: 25% 50%
+}
+
+#container{
+	/*下のかぶさるエリアの指定*/
+	position: relative;
+	z-index:1;
+	/*以下はレイアウトのための記述。削除可能*/
+	background:#fff;
+
+}
+
+.side-padding{
+	width: 100%;
+	max-width: 800px;
+	padding:0 20px;
+	margin: 0 auto;
+}
+
+
+.textlink08 a {
+	padding-right: 30px;
+}
+
+.textlink08 a::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	width: 15px;
+	height: 15px;
+	background-color: transparent;
+	border: 3px solid #bbb;
+	border-radius: 50%;
+}
+
+.textlink08 a::after {
+	content: '';
+	position: absolute;
+	top: calc(50% - 3px);
+	right: 9px;
+	transform: rotate(45deg);
+	width: 4px;
+	height: 4px;
+	border-width: 2px 2px 0 0;
+	border-style: solid;
+	border-color: #333 #333 transparent transparent;
+}
+
+.textlink08 a:hover::before {
+	border: 3px solid #ceb849;
+}
+
+.textlink08 a:hover::after {
+	border-color: #ceb849 #ceb849 transparent transparent;
+}
+
+

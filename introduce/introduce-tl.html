@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--   アイコン -->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+    <title>福岡大学工学部</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../css/6-6.css">
+
+    <script src="../js/menu.js"></script>
+    <script>showMenu("../");</script>
+
+    <style>
+        #header {
+            /*headerを全画面で見せる*/
+            width: 100%;
+            height: 30vh;
+            position: relative;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu_box"></div>
+    <header id="header">
+        <h1 style="   position: fixed;
+        top: 15vh;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        color:#fff;
+        text-shadow: 0 0 15px #666;
+        text-align: center;"><span>福岡大学</span><span>工学部</span> </h1>
+    </header>
+    <div id="container" style="background-color: #ffffff;">
+        <div class="side-padding">
+            <div style="padding-top:50px;"></div>
+            <div class="title" style="font-weight:700; text-align: left;">
+                電子情報工学科　教員紹介
+            </div>
+            <div style="padding-top:50px;"></div>
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <script>
+
+                                function teacher({ name, shikaku, senmon, color, img, description, url }) {
+                                    var text = `
+                        
+                                               
+                                    <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                    <a  href="teacher.html?ti=${url}">
+                   
+                    <div style="max-width:200px; margin: 0 auto; background-color:${color};box-shadow:   0 0 30px #EEEEF0;text-align:left;">
+                        <div style="background-image: url(${img}); width:100%; padding-top: 100%; background-position: center; background-size: contain;background-repeat: no-repeat; ">
+                        </div>
+                    </div></a>
+                    <br> 
+                    
+                    <div style="max-width:200px; margin: 0 auto;text-align:left;">
+                    <h5 style="text-align: left;">
+                        <b>${name} <font size="2">${shikaku}</font></b>
+                    </h5>
+                    <font size="2" style="text-align: left;color: rgba(85, 85, 85, 0.95);">${senmon}</font>
+                    </div>
+
+                    
+
+                    
+
+                    <br>  <br>
+                </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+
+                                teacher({
+                                    name: "大橋 正良",
+                                    shikaku: "教授",
+                                    senmon: "ワイヤレスセンサネットワーク<br>IoT<br>移動通信システム",
+                                    color: "white",
+                                    img: "../img/staff/tl/ohashi.webp",
+                                    description: "センサネットワークを活用したIoTシステムの研究開発や、新しい通信方式を用いたレーダ技術の研究を行っています。",
+                                    url: "ohashi",
+                                });
+                                teacher({
+                                    name: "小野 晋太郎",
+                                    shikaku: "准教授",
+                                    senmon: "センシング工学<br>画像情報工学<br>モビリティ工学",
+                                    color: "white",
+                                    img: "../img/staff/tl/ono.webp",
+                                    description: "実空間のセンシング、情報抽出、シーン理解、可視化などの 技術を軸とし、特に人や物の移動・交通に関するイノベー シ ョ ン（広 義 のITS, Intelligent Transport Systems）を 専門としています。",
+                                    url: "ono",
+                                });
+                                teacher({
+                                    name: "佐藤 寿倫 ",
+                                    shikaku: "教授",
+                                    senmon: "コンピュータシステム<br>プロセッサアーキテクチャ<br>省エネルギ技術",
+                                    color: "white",
+                                    img: "../img/staff/tl/sato.webp",
+                                    description: "汎用品から専用品までさまざまなコンピュータやプロセッサの実現方式を研究しています。近年はAIやIoT向けの省エ ネルギ技術に注力して取り組んでいます。",
+                                    url: "t_sato",
+                                });
+                                teacher({
+                                    name: "末次 正",
+                                    shikaku: "教授",
+                                    senmon: "パワーエレクトロニクス<br>半導体実装",
+                                    color: "white",
+                                    img: "../img/staff/tl/suetsugu.webp",
+                                    description: "情報機器に組み込まれる電源回路の小型化高効率化に取り組んでいます。またそれらの回路を組み込む実装技術の研 究を進めています",
+                                    url: "suetsugu",
+                                });
+                                teacher({
+                                    name: "鈴木 孝将",
+                                    shikaku: "教授",
+                                    senmon: "電子材料<br>半導体表面物性<br>ナノエレクトロニクス",
+                                    color: "white",
+                                    img: "../img/staff/tl/suzuki.webp",
+                                    description: "次世代電子材料であるシリコン̶有機半導体ハイブリッド構造と、エピタキシャル・グラフェン膜の作製と電気伝導に関する研究を行っています。",
+                                    url: "t_suzuki",
+                                });
+                                teacher({
+                                    name: "高橋 伸弥",
+                                    shikaku: "教授",
+                                    senmon: "音声情報処理<br>パターン情報処理<br>人工知能",
+                                    color: "white",
+                                    img: "../img/staff/tl/takahashi.webp",
+                                    description: "マルチモーダルな音声対話システムや対話ロボットの研究開発の他、聴覚支援システムのための音声認識・合成手法の 研究を行っています。また大規模データの収集、分析に基づいた人工知能応用の研究に取り組んでいます。",
+                                    url: "takahashi",
+                                });
+                                teacher({
+                                    name: "太郎丸 眞",
+                                    shikaku: "教授",
+                                    senmon: "無線通信システム<br>送受信回路<br>鉄道通信保安システム",
+                                    color: "white",
+                                    img: "../img/staff/tl/taromaru.webp",
+                                    description: "携帯電話などの移動通信システムにおける信号処理、特にMIMOなどのマルチアンテナシステムの研究に加え、次世代 鉄道信号システムの研究も行っています。",
+                                    url: "taromaru",
+                                });
+                                teacher({
+                                    name: "鶴田 直之",
+                                    shikaku: "教授",
+                                    senmon: "画像認識<br>3次元ビジョン<br>人工知能",
+                                    color: "white",
+                                    img: "../img/staff/tl/tsuruta.webp",
+                                    description: "人工知能のうち、画像認識や3次元ビジョンの研究を行っています。これらを組み合わせるとARやプロジェクション マッピングが実現できます。",
+                                    url: "tsuruta",
+                                });
+                                teacher({
+                                    name: "中西 恒夫",
+                                    shikaku: "教授",
+                                    senmon: "ソフトウエア工学<br>システム工学<br>組み込み/オートモーティブシステム",
+                                    color: "white",
+                                    img: "../img/staff/tl/nakanishi.webp",
+                                    description: "組み込み（特にオートモーティブ）システムに代表されるメ カ・エレキ・ソフト複合システムを対象とする、システムとソフ トウエアの開発方法論を専門領域としています。 ",
+                                    url: "nakanishi",
+                                });
+                                teacher({
+                                    name: "中村 遼",
+                                    shikaku: "講師",
+                                    senmon: "情報ネットワーク<br>通信ネットワーク",
+                                    color: "white",
+                                    img: "../img/staff/tl/nakamura.webp",
+                                    description: "次世代ネットワークアーキテクチャの設計およびモデル化 の研究に取り組んでいます。さらに、様々なネットワークにおける情報拡散の特性を理解し制御するための研究にも取り 組んでいます。",
+                                    url: "nakamura",
+                                });
+                                teacher({
+                                    name: "名倉 徹",
+                                    shikaku: "教授",
+                                    senmon: "集積回路設計<br>微弱信号検出<br>AIチップ",
+                                    color: "white",
+                                    img: "../img/staff/tl/nakura.webp",
+                                    description: "筋電測定回路、高精度距離センサ、画像認識LSIなど、半導 体集積回路を用いたさまざまなアプリケーションの高性能 化を研究しています。",
+                                    url: "nakura",
+                                });
+                                teacher({
+                                    name: "文仙 正俊",
+                                    shikaku: "教授",
+                                    senmon: "光工学<br>光情報処理<br>情報フォトニクス",
+                                    color: "white",
+                                    img: "../img/staff/tl/bunsen.webp",
+                                    description: "ホログラフィを応用した新たな光技術による三次元光記 録、三次元光計測や波面制御などの、光情報処理に関する研 究を行っています",
+                                    url: "bunsen",
+                                });
+                                teacher({
+                                    name: "モシニャガ ワシリー",
+                                    shikaku: "教授",
+                                    senmon: "スマートシステム<br>コグニティブコンピューティング<br>AI",
+                                    color: "white",
+                                    img: "../img/staff/tl/moshnyaga.webp",
+                                    description: "人間がより良い判断をできるようアドバイスをしたり、人 間の能力を補強したりするなど、人間をサポートすることを 目的としたシステムに関する研究を行っています。",
+                                    url: "moshnyaga",
+                                });
+                                teacher({
+                                    name: "吉村 賢治",
+                                    shikaku: "教授",
+                                    senmon: "自然言語処理",
+                                    color: "white",
+                                    img: "../img/staff/tl/yoshimura.webp",
+                                    description: "日本語文の解析システムの研究を中心に行っています。ま た、その技術を応用したアプリケーションシステムの開発等 も行っています。",
+                                    url: "yoshimura",
+                                });
+
+
+
+
+
+
+                            </script>
+                            <br><br>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <script>
+
+                        function assistant({ name, shikaku}) {
+                            var text = `
+            
+                                   
+                            <div class="col-md-4 col-sm-6 col-6"  >
+            
+                                    
+           
+       
+            
+            <h5 style="text-align: left;max-width:200px; margin: 0 auto;">
+                <b>${name} <font size="2">${shikaku}</font></b>
+            </h5>
+           
+        <div style="padding-bottom:15px;"></div>
+
+            
+
+            
+
+        </div>
+                                `;
+                            document.write(text);
+                        }
+
+                        assistant({
+                            name: "請園 智玲",
+                            shikaku: "助教",
+                            
+
+                        });
+
+
+                        assistant({
+                            name: "太田 真衣",
+                            shikaku: "助教",
+                           
+                        });
+
+                        assistant({
+                            name: "乙武 北斗",
+                            shikaku: "助教",
+                         
+                        });
+
+                        assistant({
+                            name: "加藤 健太郎",
+                            shikaku: "助教",
+                           
+                        });
+
+                        assistant({
+                            name: "田辺 利文",
+                            shikaku: "助教",
+                          
+                        });
+                        assistant({
+                            name: "崔 雲",
+                            shikaku: "助教",
+                           
+                        });
+
+
+                        assistant({
+                            name: "橋本 浩二",
+                            shikaku: "助教",
+                           
+                        });
+                        assistant({
+                            name: "廣重 法道",
+                            shikaku: "助教",
+                           
+                        });
+
+
+                        assistant({
+                            name: "藤永 拓矢",
+                            shikaku: "助教",
+                           
+                        });
+                       
+                        assistant({
+                            name: "前田 佐嘉志",
+                            shikaku: "助教",
+                           
+                        });
+                       
+                        assistant({
+                            name: "松尾 涼太郎",
+                            shikaku: "助教",
+                           
+                        });    
+                       
+                        assistant({
+                            name: "三角 真",
+                            shikaku: "助教",
+                           
+                        });   
+                        
+                        assistant({
+                            name: "森 慎太郎",
+                            shikaku: "助教",
+                           
+                        });
+              
+                       
+                        
+                        assistant({
+                            name: "柳生 数馬",
+                            shikaku: "助教",
+                           
+                        });
+
+                        
+                        assistant({
+                            name: "栗 達",
+                            shikaku: "助教",
+                           
+                        });
+
+                        assistant({
+                            name: "渡邊 朝子",
+                            shikaku: "助教",
+                           
+                        });
+                        
+
+
+                    </script>
+                    <br><br>  <br> <br>
+                    
+                </div>
+               
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <footer style="background-color:#222;">
+        <div class="side-padding">
+            <br>
+            <br>
+            <p>福岡大学工学部</p>
+            <p>
+                〒814-0180　福岡市城南区七隈八丁目19番１号
+                Tel：092-871-6631（代表）
+            </p>
+            <p style="text-align: center;">
+                &copy; 2023 福岡大学工学部</p>
+            <br>
+            <br>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

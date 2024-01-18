@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--   アイコン -->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+
+    <title>福岡大学工学部</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../css/6-6.css">
+
+    <script src="../js/menu.js"></script>
+    <script>showMenu("../");</script>
+
+    <style>
+        #header {
+            /*headerを全画面で見せる*/
+            width: 100%;
+            height: 30vh;
+            position: relative;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu_box"></div>
+    <header id="header">
+        <h1 style="   position: fixed;
+        top: 15vh;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        color:#fff;
+        text-shadow: 0 0 15px #666;
+        text-align: center;"><span>福岡大学</span><span>工学部</span> </h1>
+    </header>
+    <div id="container" style="background-color: #ffffff;">
+        <div class="side-padding">
+            <div style="padding-top:50px;"></div>
+            <div class="title" style="font-weight:700; text-align: left;">
+                機械工学科　教員紹介
+            </div>
+            <div style="padding-top:50px;"></div>
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <script>
+
+                                function teacher({ name, shikaku, senmon, color, img, description, url }) {
+                                    var text = `
+                    
+                                            <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                                                <a  href="teacher.html?ti=${url}">
+                                               
+                                                <div style="max-width:200px; margin: 0 auto; background-color:${color};box-shadow:   0 0 30px #EEEEF0;text-align:left;">
+                                                    <div style="background-image: url(${img}); width:100%; padding-top: 100%; background-position: center; background-size: contain;background-repeat: no-repeat; ">
+                                                    </div>
+                                                </div></a>
+                                                <br> 
+                                                
+                                                <div style="max-width:200px; margin: 0 auto;text-align:left;">
+                                                <h5 style="text-align: left;">
+                                                    <b>${name} <font size="2">${shikaku}</font></b>
+                                                </h5>
+                                                <font size="2" style="text-align: left;color: rgba(85, 85, 85, 0.95);">${senmon}</font>
+                                                </div>
+                    
+                                                
+                    
+                                                
+                    
+                                                <br>  <br>
+                                            </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+                                teacher({
+                                    name: "安東 洋一",
+                                    shikaku: "准教授",
+                                    senmon: "流体工学<br>ターボ機械<br>乱流",
+                                    color: "white",
+                                    img: "../img/staff/tm/ando.webp",
+                                    description: "流れに伴う乱れはさまざまな特性を有し、その 工学的特徴の理解は抗力の低減、混合促進など の産業界への応用が期待されている分野です。特 にフラクタル構造の物体後方に発達する乱れについて研究しています。",
+                                    url: "ando",
+                                });
+                                teacher({
+                                    name: "稲毛 真一",
+                                    shikaku: "教授",
+                                    senmon: "乱流と燃焼のモデル化<br>エネルギー最適化<br>品質工学",
+                                    color: "white",
+                                    img: "../img/staff/tm/inage.webp",
+                                    description: "現在の設計においては、流れの数値計算が不可欠なツールです。その精度は乱流や燃焼のモデル 化に強く依存します。本研究では、基礎的な一様 等方性乱流の理解から始まり、複雑乱流、また燃 焼現象をモデル化し、ガスタービン燃焼器などの 数値計算を高精度に行えるようにするものです。",
+                                    url: "inage",
+                                });
+                                teacher({
+                                    name: "岩村 誠人 ",
+                                    shikaku: "教授",
+                                    senmon: "マルチボディダイナミクス<br>ロボット工学<br>制御工学",
+                                    color: "white",
+                                    img: "../img/staff/tm/iwamura.webp",
+                                    description: "複雑な機械システムの運動方程式を効率的かつシステマチックに導出するための理論について研究しています。また、その理論を応用して革新 的なロボット技術の開発を行っています。 ",
+                                    url: "iwamura",
+                                });
+
+
+                                teacher({
+                                    name: "遠藤 正浩",
+                                    shikaku: "教授",
+                                    senmon: "材料力学<br>ものづくり",
+                                    color: "white",
+                                    img: "../img/staff/tm/endo.webp",
+                                    description: "複雑な応力が作用する材料や機械要素の疲労強度および機械設計のための強度評価法について研究しています。試験機や装置等の設計・開発と製作なども研究の重要な一部となっています。企業や外部研究機関との共同研究も盛んです。",
+                                    url: "endo",
+                                });
+                                teacher({
+                                    name: "高尾 幸来",
+                                    shikaku: "教授",
+                                    senmon: "熱工学<br>再生エネルギー利用技術<br>対向ピストンエンジン<br>熱物性および熱交換器",
+                                    color: "white",
+                                    img: "../img/staff/tm/takao.webp",
+                                    description: "脱炭素社会の実現および地球環境問題の解決を目指して、高効率な再生エネルギー利用技術・エンジン・熱交換技術に関する研究を行っています。具体的には太陽エネルギーの有効利用、対向ピストンエンジンの開発、エマルジョン燃料の安定性改善、クーリングタワーの性能向上および冷媒の液体密度・音速の高精度測定などの研究開発に取り組んでいます。",
+                                    url: "takao",
+                                });
+
+                                teacher({
+                                    name: "宮田 一司",
+                                    shikaku: "准教授",
+                                    senmon: "伝熱工学<br>相変化伝熱<br>熱交換器・熱輸送デバイス",
+                                    color: "white",
+                                    img: "../img/staff/tm/miyata.webp",
+                                    description: "高性能の熱交換器・熱輸送デバイスの開発を目指して、伝熱流動現象に関する研究を行っています。特に、微細な流路内を流体が相変化しながら流れる伝熱現象について、伝熱促進の方法を実験とシミュレーションの両面から探究しています。 す。特に、微細な流路内を流体が相変化しながら 流れる伝熱現象について、伝熱促進の方法を実験 とシミュレーションの両面から探究しています。",
+                                    url: "miyata",
+                                });
+                                teacher({
+                                    name: "森山 茂章",
+                                    shikaku: "教授",
+                                    senmon: "生体材料<br>トライボロジー<br>機械設計",
+                                    color: "white",
+                                    img: "../img/staff/tm/moriyama.webp",
+                                    description: "整形外科学領域で使用される人工関節や脊椎ケージなどを開発しています。また、生体材料の評価や外科手術のシミュレーションを行っています。機械工学を基礎として、医学におけるさまざまな問題の解決に挑戦しています。",
+                                    url: "moriyama",
+                                });
+                                teacher({
+                                    name: "柳瀬 圭児",
+                                    shikaku: "教授",
+                                    senmon: "材料力学<br>計算固体力学<br>材料強度学",
+                                    color: "white",
+                                    img: "../img/staff/tm/yanase.webp",
+                                    description: "金属材料の引張強度や疲労強度などの高精度な予測の実現を目指して、大量の実験データと機械学習を用いた予測手法の構築に取り組んでいます。",
+                                    url: "yanase",
+                                });
+                                teacher({
+                                    name: "山辺 純一郎",
+                                    shikaku: "教授",
+                                    senmon: "機械工作法<br>材料強度学<br>水素脆化",
+                                    color: "white",
+                                    img: "../img/staff/tm/yamabe.webp",
+                                    description: "世界規模での環境問題を解決する一環として、水素社会実現に向けた研究を実施しています。材料中に侵入した水素が材料を脆化させる、いわゆる水素脆化の問題に着目し、金属積層造形や塑性加工など種々の工作法を用いて製作した材料 の強度特性に及ぼす水素の影響について研究しています。",
+                                    url: "yamabe",
+                                });
+                                teacher({
+                                    name: "林 長軍",
+                                    shikaku: "准教授",
+                                    senmon: "機械制御工学<br>機械機構の最適設計",
+                                    color: "white",
+                                    img: "../img/staff/tm/lin.webp",
+                                    description: "マニピュレータおよび移動ロボットの最適軌道を求めるための有用な手法を提案・研究しています。また、機械機構の最適設計として、インデックスカム機構の残留振動を抑制するためのカムの最適設計、および発電効率の向上を目的とした高集光倍率反射型太陽光発電システムの反射曲面の最適設計を行っています。",
+                                    url: "lin",
+                                });
+
+
+                            </script>
+                            <br><br>
+                        </div>
+                        <div class="row">
+                            <script>
+
+                                function assistant({ name, shikaku}) {
+                                    var text = `
+                    
+                                           
+                                    <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                   
+               
+                    
+                    <h5 style="text-align: left;max-width:200px; margin: 0 auto;">
+                        <b>${name} <font size="2">${shikaku}</font></b>
+                    </h5>
+                   
+                <div style="padding-bottom:15px;"></div>
+
+                    
+
+                    
+
+                </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+                                assistant({
+                                    name: "赤木 富士雄",
+                                    shikaku: "助教",
+                                    
+
+                                });
+
+
+                                assistant({
+                                    name: "麻生 裕之",
+                                    shikaku: "助教",
+                                   
+                                });
+
+                                assistant({
+                                    name: "川端 洋",
+                                    shikaku: "助教",
+                                 
+                                });
+
+                                assistant({
+                                    name: "田中 佑弥",
+                                    shikaku: "助教",
+                                   
+                                });
+
+                                assistant({
+                                    name: "西山 貴史",
+                                    shikaku: "助教",
+                                  
+                                });
+                                assistant({
+                                    name: "松尾 尚",
+                                    shikaku: "助教",
+                                   
+                                });
+
+
+                                assistant({
+                                    name: "松本 紘宜",
+                                    shikaku: "助教",
+                                   
+                                });
+
+
+                            </script>
+                            <br><br>  <br>
+                            
+                        </div>
+                        <div class="row">
+                            <script>
+
+                                function assistant({ name, shikaku}) {
+                                    var text = `
+                    
+                                           
+                                    <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                   
+               
+                    
+                    <h5 style="text-align: left;max-width:200px; margin: 0 auto;">
+                        <b>${name} <font size="2">${shikaku}</font></b>
+                    </h5>
+                   
+                <div style="padding-bottom:15px;"></div>
+
+                    
+
+                    
+
+                </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+
+                                assistant({
+                                    name: "古賀 智久",
+                                    shikaku: "助手",
+                                   
+                                });
+                                assistant({
+                                    name: "蛇嶋 華",
+                                    shikaku: "助手",
+                                   
+                                });
+
+                                assistant({
+                                    name: "森 秀幸",
+                                    shikaku: "助手",
+                                   
+                                });
+
+
+
+                            </script>
+                            <br><br>  <br><br>
+                            
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <footer style="background-color:#222;">
+        <div class="side-padding">
+            <br>
+            <br>
+            <p>福岡大学工学部</p>
+            <p>
+                〒814-0180　福岡市城南区七隈八丁目19番１号
+                Tel：092-871-6631（代表）
+            </p>
+            <p style="text-align: center;">
+                &copy; 2023 福岡大学工学部</p>
+            <br>
+            <br>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

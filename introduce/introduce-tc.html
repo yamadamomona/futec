@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--   アイコン -->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+    <title>福岡大学工学部</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../css/6-6.css">
+
+    <script src="../js/menu.js"></script>
+    <script>showMenu("../");</script>
+
+    <style>
+        #header {
+            /*headerを全画面で見せる*/
+            width: 100%;
+            height: 30vh;
+            position: relative;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu_box"></div>
+    <header id="header">
+        <h1 style="   position: fixed;
+        top: 15vh;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        color:#fff;
+        text-shadow: 0 0 15px #666;
+        text-align: center;"><span>福岡大学</span><span>工学部</span> </h1>
+    </header>
+    <div id="container" style="background-color: #ffffff;">
+        <div class="side-padding">
+            <div style="padding-top:50px;"></div>
+            <div class="title" style="font-weight:700; text-align: left;">
+                社会デザイン工学科　教員紹介
+            </div>
+            <div style="padding-top:50px;"></div>
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <script>
+                                function teacher({ name, shikaku, senmon, color, img, description, url }) {
+                                    var text = `
+                    
+                                           
+                                    <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                    <a  href="teacher.html?ti=${url}">
+                   
+                    <div style="max-width:200px; margin: 0 auto; background-color:${color};box-shadow:   0 0 30px #EEEEF0;text-align:left;">
+                        <div style="background-image: url(${img}); width:100%; padding-top: 100%; background-position: center; background-size: contain;background-repeat: no-repeat; ">
+                        </div>
+                    </div></a>
+                    <br> 
+                    
+                    <div style="max-width:200px; margin: 0 auto;text-align:left;">
+                    <h5 style="text-align: left;">
+                        <b>${name} <font size="2">${shikaku}</font></b>
+                    </h5>
+                    <font size="2" style="text-align: left;color: rgba(85, 85, 85, 0.95);">${senmon}</font>
+                    </div>
+
+                    
+
+                    
+
+                    <br>  <br>
+                </div>
+                                        `;
+                                    document.write(text);
+                                }
+                                teacher({
+                                    name: "坂田 力",
+                                    shikaku: "准教授",
+                                    senmon: "構造力学",
+                                    color: "white",
+                                    img: "../img/staff/tc/sakata.webp",
+                                    description: "「なぜだろう？」と疑問に思うことから「学び」が 始まります。そして「へぇー、なるほど！」と思ったときに「理解できた」ということです。これからの4年間、多くの「なるほど！」を実感してください。",
+                                    url: "sakata",
+                                });
+                                teacher({
+                                    name: "佐藤 研一 ",
+                                    shikaku: "教授",
+                                    senmon: "地盤工学<br>舗装工学<br>地盤環境工学",
+                                    color: "white",
+                                    img: "../img/staff/tc/k_sato.webp",
+                                    description: "大学の4年間は「よく遊び、よく学び」ましょう。福岡大学は全国でも珍しいワンキャンパスです。多くの学部学科の学生たちと交流ができます。夢を持った皆さんの入学をお待ちしております。",
+                                    url: "k_sato",
+                                });
+
+                                teacher({
+                                    name: "柴田 久",
+                                    shikaku: "教授",
+                                    senmon: "景観デザイン<br>まちづくり",
+                                    color: "white",
+                                    img: "../img/staff/tc/shibata.webp",
+                                    description: "魅力的なまちは多くの魅力的な社会基盤施 設や公共空間によって形づくられています。美 しい「景観づくり」、快適な暮らしを育む「まちづくり」について学んでみませんか。",
+                                    url: "shibata",
+                                });
+                                teacher({
+                                    name: "鈴木 慎也",
+                                    shikaku: "准教授",
+                                    senmon: "環境工学<br>廃棄物資源循環工学 ",
+                                    color: "white",
+                                    img: "../img/staff/tc/suzuki.webp",
+                                    description: "デザインとは、具体的な問題を解き明かすための思考・概念を組み立て、それを表現する行 為です。私たちのデザインの対象は、この日常 社会そのものです。お待ちしています。",
+                                    url: "s_suzuki",
+                                });
+                                teacher({
+                                    name: "辰巳 浩 ",
+                                    shikaku: "教授",
+                                    senmon: "交通計画<br>都市計画",
+                                    color: "white",
+                                    img: "../img/staff/tc/tatsumi.webp",
+                                    description: "本学科では、安全で快適なまちづくりを実現 するための人材を養成します。私たちの暮らす 街をより良くしたい人や社会に貢献したい人は本学科を選んでみてはいかがでしょうか。",
+                                    url: "tatsumi",
+                                });
+                                teacher({
+                                    name: "橋本 彰博 ",
+                                    shikaku: "准教授",
+                                    senmon: "水工学<br>環境水理学",
+                                    color: "white",
+                                    img: "../img/staff/tc/hashimoto.webp",
+                                    description: "将来の自分をイメージしてみてください。そして、「市民の文明的な暮らしのために、人間らしい環境 を整えていく仕事（Civil Engineering）」に興味を 持ったなら、本学科を調べてみてください。",
+                                    url: "hashimoto"
+                                });
+                                teacher({
+                                    name: "櫨原 弘貴",
+                                    shikaku: "准教授",
+                                    senmon: "コンクリート工学<br>維持管理工学",
+                                    color: "white",
+                                    img: "../img/staff/tc/hazehara.webp",
+                                    description: "ダム、橋、トンネルを建設して、そして次の世 代に残していく、そんなものづくりの楽しさを知ることができるのも本学科の魅力です。自然環 境と社会環境を融合して、より良い未来を一緒 に創っていきましょう",
+                                    url: "hazehara",
+                                });
+                                teacher({
+                                    name: "村上 哲",
+                                    shikaku: "教授",
+                                    senmon: "地盤工学<br>地盤防災工学<br>地盤情報工学",
+                                    color: "white",
+                                    img: "../img/staff/tc/murakami.webp",
+                                    description: "地震や豪雨による地盤に関わる多くの災害。 今後、激甚化するといわれています。私たちの暮らしを守る技術について、学び、考え、そして、未 来のための新しい技術を一緒に研究しましょう。",
+                                    url: "murakami",
+                                });
+
+
+                                teacher({
+                                    name: "渡辺 浩",
+                                    shikaku: "教授 ",
+                                    senmon: "橋梁工学<br>木材利用<br>災害対応",
+                                    color: "white",
+                                    img: "../img/staff/tc/h_watanabe.webp",
+                                    description: "最近も頻発する災害を止めることはできなく ても、ダメージを和らげることはあなたにもできると思います。私たちと一緒に取り組んでみませんか。",
+                                    url: "h_watanabe",
+                                });
+
+                                teacher({
+                                    name: "渡辺 亮一",
+                                    shikaku: "教授",
+                                    senmon: "応用生態工学<br>河川工学<br>上下水道学",
+                                    color: "white",
+                                    img: "../img/staff/tc/r_watanabe.webp",
+                                    description: "大変な時期で、皆さんも戸惑っていると思い ますが、この時間を大切に使いましょう。読書 をお勧めします。どんなジャンルの本でも良い ので、1日に1時間、活字を読んでみましょう。",
+                                    url: "r_watanabe",
+                                });
+                            </script>
+                            <br><br>
+                        </div>
+                        <div class="row">
+                            <script>
+
+                                function assistant({ name, shikaku}) {
+                                    var text = `
+                    
+                                           
+                                    <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                   
+               
+                    
+                    <h5 style="text-align: left;max-width:200px; margin: 0 auto;">
+                        <b>${name} <font size="2">${shikaku}</font></b>
+                    </h5>
+                   
+                <div style="padding-bottom:15px;"></div>
+
+                    
+
+                    
+
+                </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+                                assistant({
+                                    name: "今泉 暁音",
+                                    shikaku: "助教",
+                                    
+
+                                });
+
+
+                                assistant({
+                                    name: "伊豫岡 宏樹",
+                                    shikaku: "助教",
+                                   
+                                });
+
+                                assistant({
+                                    name: "下妻 達也",
+                                    shikaku: "助教",
+                                 
+                                });
+
+                                assistant({
+                                    name: "田部井 優也",
+                                    shikaku: "助教",
+                                   
+                                });
+
+                                assistant({
+                                    name: "西 智美",
+                                    shikaku: "助教",
+                                  
+                                });
+                                assistant({
+                                    name: "橋本 くるみ",
+                                    shikaku: "助教",
+                                   
+                                });
+
+
+                                assistant({
+                                    name: "浜田 晃規",
+                                    shikaku: "助教",
+                                   
+                                });
+                                assistant({
+                                    name: "藤川 拓朗",
+                                    shikaku: "助教",
+                                   
+                                });
+
+
+                       
+                      
+
+
+
+                            </script>
+                            <br><br>  <br>
+                            
+                        </div>
+                        <div class="row">
+                            <script>
+
+                                function assistant({ name, shikaku}) {
+                                    var text = `
+                    
+                                           
+                                    <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                   
+               
+                    
+                    <h5 style="text-align: left;max-width:200px; margin: 0 auto;">
+                        <b>${name} <font size="2">${shikaku}</font></b>
+                    </h5>
+                   
+                <div style="padding-bottom:15px;"></div>
+
+                    
+
+                    
+
+                </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+                         
+
+
+                                assistant({
+                                    name: "池田 隆太郎",
+                                    shikaku: "助手",
+                                   
+                                });
+
+                                assistant({
+                                    name: "大隣 昭作",
+                                    shikaku: "助手",
+                                   
+                                });
+
+                                assistant({
+                                    name: "尾木 陽子",
+                                    shikaku: "助手",
+                                   
+                                });
+
+                                assistant({
+                                    name: "カタパディ ドゥルバ ナラヤナ",
+                                    shikaku: "助手",
+                                   
+                                });
+
+                                assistant({
+                                    name: "古賀 千佳嗣",
+                                    shikaku: "助手",
+                                   
+                                });
+
+                                assistant({
+                                    name: "林 義晃",
+                                    shikaku: "助手",
+                                   
+                                });
+
+                      
+
+
+
+                            </script>
+                            <br><br>  <br><br>
+                            
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <footer style="background-color:#222;">
+        <div class="side-padding">
+            <br>
+            <br>
+            <p>福岡大学工学部</p>
+            <p>
+                〒814-0180　福岡市城南区七隈八丁目19番１号
+                Tel：092-871-6631（代表）
+            </p>
+            <p style="text-align: center;">
+                &copy; 2023 福岡大学工学部</p>
+            <br>
+            <br>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

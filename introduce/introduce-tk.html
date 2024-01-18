@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--   アイコン -->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+
+    <title>福岡大学工学部</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../css/6-6.css">
+
+    <script src="../js/menu.js"></script>
+    <script>showMenu("../");</script>
+
+    <style>
+        #header {
+            /*headerを全画面で見せる*/
+            width: 100%;
+            height: 30vh;
+            position: relative;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu_box"></div>
+    <header id="header">
+        <h1 style="   position: fixed;
+        top: 15vh;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        color:#fff;
+        text-shadow: 0 0 15px #666;
+        text-align: center;"><span>福岡大学</span><span>工学部</span> </h1>
+    </header>
+    <div id="container" style="background-color: #ffffff;">
+        <div class="side-padding">
+            <div style="padding-top:50px;"></div>
+            <div class="title" style="font-weight:700; text-align: left;">
+                化学システム工学科　教員紹介
+            </div>
+            <div style="padding-top:50px;"></div>
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-md-12 col-12">
+                        <div class="col-md-12 col-12">
+                            <div class="row">
+                                <script>
+
+                                    function teacher({ name, shikaku, senmon, color, img, description, url }) {
+                                        var text = `
+                                        <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                    <a  href="teacher.html?ti=${url}">
+                   
+                    <div style="max-width:200px; margin: 0 auto; background-color:${color};box-shadow:   0 0 30px #EEEEF0;text-align:left;">
+                        <div style="background-image: url(${img}); width:100%; padding-top: 100%; background-position: center; background-size: contain;background-repeat: no-repeat; ">
+                        </div>
+                    </div></a>
+                    <br> 
+                    
+                    <div style="max-width:200px; margin: 0 auto;text-align:left;">
+                    <h5 style="text-align: left;">
+                        <b>${name} <font size="2">${shikaku}</font></b>
+                    </h5>
+                    <font size="2" style="text-align: left;color: rgba(85, 85, 85, 0.95);">${senmon}</font>
+                    </div>
+
+                    
+
+                    
+
+                    <br>  <br>
+                </div>
+                                        `;
+                                        document.write(text);
+                                    }
+
+                                    teacher({
+                                        name: "加藤 勝美",
+                                        shikaku: "教授",
+                                        senmon: "化学安全工学",
+                                        color: "white",
+                                        img: "../img/staff/tk/katsumi.webp",
+                                        description: "化学工場などで起こる災害の抑止を目的として、さまざま な化学物質、化学プロセスの発火爆発の危険性について研究しています。また、爆発性物質を利用した化学製品である エアバッグや花火の性能向上を目的とした研究も実施して います。",
+                                        url: "k_kato",
+                                    });
+                                    teacher({
+                                        name: "加藤 貴史",
+                                        shikaku: "准教授",
+                                        senmon: "化学工学<br>無機材料工学",
+                                        color: "white",
+                                        img: "../img/staff/tk/kato.webp",
+                                        description: "木材などのバイオマス資源を原料とした機能性炭素材料、 つまり、環境浄化やエネルギー生産などに役立つ特殊な“炭” の合成に関する研究を行っています。炭素資源の活用を通じ て、循環社会の構築に貢献することが目的です。",
+                                        url: "t_kato",
+                                    });
+                                    teacher({
+                                        name: "久保田 純",
+                                        shikaku: "教授",
+                                        senmon: "応用触媒化学",
+                                        color: "white",
+                                        img: "../img/staff/tk/kubota.webp",
+                                        description: "エネルギー技術に資する触媒化学・電気化学の研究をし ています。電力による窒素と水からのアンモニア合成や、二 酸化炭素と水からのメタン合成をする電気化学装置のため の電極触媒、電解質の研究をしています。また、燃料電池の 白金代替触媒の研究もしています。",
+                                        url: "kubota",
+                                    });
+                                    teacher({
+                                        name: "新戸 浩幸 ",
+                                        shikaku: "教授",
+                                        senmon: "界面プロセス工学<br>細胞と粒子の相互作用",
+                                        color: "white",
+                                        img: "../img/staff/tk/shinto.webp",
+                                        description: "専門分野は界面プロセス工学で ①「緊張と緩和」（研究を行うときは集中し、遊ぶときは楽しく） ②「研究」＝「未解決課題に挑戦し、第一発見者になること」 ③「研究の醍醐味」＝「他人があっと驚く発見をすること」 をモットーにして、教育・研究活動をしています。",
+                                        url: "shinto",
+                                    });
+                                    teacher({
+                                        name: "重松 幹二",
+                                        shikaku: "教授",
+                                        senmon: "反応化学<br>バイオマス利用学",
+                                        color: "white",
+                                        img: "../img/staff/tk/shigematsu.webp",
+                                        description: "バイオマスエネルギーと資源リサイクル、天然物由来物質 の抽出と生理活性機能、化学物質の安全性評価などを行っています。",
+                                        url: "shigematsu"
+                                    });
+                                    teacher({
+                                        name: "鈴川 一己",
+                                        shikaku: "教授",
+                                        senmon: "プロセス流体工学",
+                                        color: "white",
+                                        img: "../img/staff/tk/suzukawa.webp",
+                                        description: "混合装置兼反応器である撹拌槽の研究をしています。羽 根にフラクタルという特殊な形状を用いた撹拌翼を設計し、 混合装置内の流速分布や動力測定および数値シミュレー ションにより性能評価をしています。",
+                                        url: "suzukawa",
+                                    });
+                                    teacher({
+                                        name: "瀬戸 弘一",
+                                        shikaku: "准教授",
+                                        senmon: "機能性高分子材料<br>バイオ分離工学",
+                                        color: "white",
+                                        img: "../img/staff/tk/seto.webp",
+                                        description: "何に扱うかを研究しています。タンパク質、糖質、ポリフェ ノールをパーツとして、有機合成や高分子重合を駆使して機 能性材料を構築し、バイオ分離やバイオ検出等の分野に応用しています",
+                                        url: "seto",
+                                    });
+                                    teacher({
+                                        name: "野田 賢",
+                                        shikaku: "教授",
+                                        senmon: "プロセスシステム工学",
+                                        color: "white",
+                                        img: "../img/staff/tk/noda.webp",
+                                        description: "化学やエネルギーなどのプロセス産業のための監視制御 システムの合理的な設計論の研究に取り組んでいます。オ ペレータが誤判断を起こしにくいアラームシステムや、プラ ント運転データからの有害アラームの抽出法の開発を進め ています。",
+                                        url: "noda",
+                                    });
+                                    teacher({
+                                        name: "松隈 洋介 ",
+                                        shikaku: "教授",
+                                        senmon: "数値流体工学",
+                                        color: "white",
+                                        img: "../img/staff/tk/matsukuma.webp",
+                                        description: "輸送現象論に基づく環境・エネルギー装置の高性能化に 関する研究をしています。例えば、薬剤の中にファインバブ ルと呼ばれる極微小な泡をたくさん作る研究をシミュレー ションと実験の両方を用いて行っています。",
+                                        url: "matsukuma",
+                                    });
+                                    teacher({
+                                        name: "三島 健司",
+                                        shikaku: "教授",
+                                        senmon: "化学工学<br>環境工学<br>薬理学",
+                                        color: "white",
+                                        img: "../img/staff/tk/mishima.webp",
+                                        description: "生命・健康を守る薬剤・化粧品・機能性食品の開発を行っ ています。高圧力の技術を使って、環境に優しい装置を作り、 付加価値の高いマイクロ・ナノの薬剤・化粧品・機能性食品 の実用化研究を行っています",
+                                        url: "mishima",
+                                    });
+
+
+                                </script>
+                                <br><br>
+                            </div>
+                            <div class="row">
+                                <script>
+    
+                                    function assistant({ name, shikaku}) {
+                                        var text = `
+                        
+                                               
+                                        <div class="col-md-4 col-sm-6 col-6"  >
+                        
+                                                
+                       
+                   
+                        
+                        <h5 style="text-align: left;max-width:200px; margin: 0 auto;">
+                            <b>${name} <font size="2">${shikaku}</font></b>
+                        </h5>
+                       
+                    <div style="padding-bottom:15px;"></div>
+    
+                        
+    
+                        
+    
+                    </div>
+                                            `;
+                                        document.write(text);
+                                    }
+    
+                                    assistant({
+                                        name: "相田 卓",
+                                        shikaku: "助教",
+                                        
+    
+                                    });
+    
+    
+                                    assistant({
+                                        name: "内山 弘規",
+                                        shikaku: "助教",
+                                       
+                                    });
+    
+                                    assistant({
+                                        name: "金井 由悟",
+                                        shikaku: "助教",
+                                     
+                                    });
+    
+                                    assistant({
+                                        name: "塩田 謙人",
+                                        shikaku: "助教",
+                                       
+                                    });
+    
+                                    assistant({
+                                        name: "シャーミン タンジナ",
+                                        shikaku: "助教",
+                                      
+                                    });
+                                    assistant({
+                                        name: "戸高 昌俊",
+                                        shikaku: "助教",
+                                       
+                                    });
+    
+    
+                                    assistant({
+                                        name: "永石 新太郎",
+                                        shikaku: "助教",
+                                       
+                                    });
+                                    assistant({
+                                        name: "永島 大",
+                                        shikaku: "助教",
+                                       
+                                    });
+    
+    
+                                    assistant({
+                                        name: "中野 涼子",
+                                        shikaku: "助教",
+                                       
+                                    });
+                                   
+                                    assistant({
+                                        name: "東 英子",
+                                        shikaku: "助教",
+                                       
+                                    });
+                                   
+                                    assistant({
+                                        name: "松永 浩貴",
+                                        shikaku: "助教",
+                                       
+                                    });    
+                                   
+                                    assistant({
+                                        name: "吉鶴 祐耶",
+                                        shikaku: "助教",
+                                       
+                                    });   
+                                    
+                                    assistant({
+                                        name: "吉原 直記",
+                                        shikaku: "助教",
+                                       
+                                    });
+                          
+                                
+    
+    
+                                </script>
+                                <br><br>  <br>
+                                
+                            </div>
+                            <div class="row">
+                                <script>
+    
+                                    function assistant({ name, shikaku}) {
+                                        var text = `
+                        
+                                               
+                                        <div class="col-md-4 col-sm-6 col-6"  >
+                        
+                                                
+                       
+                   
+                        
+                        <h5 style="text-align: left;max-width:200px; margin: 0 auto;">
+                            <b>${name} <font size="2">${shikaku}</font></b>
+                        </h5>
+                       
+                    <div style="padding-bottom:15px;"></div>
+    
+                        
+    
+                        
+    
+                    </div>
+                                            `;
+                                        document.write(text);
+                                    }
+    
+                                    
+                                    assistant({
+                                        name: "関口 博史",
+                                        shikaku: "助手",
+                                       
+                                    });
+
+                                    
+                                    assistant({
+                                        name: "廣橋 由美子",
+                                        shikaku: "助手",
+                                       
+                                    });
+    
+    
+                                </script>
+                                <br><br>  <br><br>
+                                
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <footer style="background-color:#222;">
+            <div class="side-padding">
+                <br>
+                <br>
+                <p>福岡大学工学部</p>
+                <p>
+                    福岡大学　工学部
+                    〒814-0180　福岡市城南区七隈八丁目19番１号
+                    Tel：092-871-6631（代表）
+                </p>
+                <p style="text-align: center;">
+                    &copy; 2023 福岡大学工学部</p>
+                <br>
+                <br>
+            </div>
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--   アイコン -->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+
+    <title>福岡大学工学部</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../css/6-6.css">
+
+    <script src="../js/menu.js"></script>
+    <script>showMenu("../");</script>
+
+    <style>
+        #header {
+            /*headerを全画面で見せる*/
+            width: 100%;
+            height: 30vh;
+            position: relative;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu_box"></div>
+    <header id="header">
+        <h1 style="   position: fixed;
+        top: 15vh;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        color:#fff;
+        text-shadow: 0 0 15px #666;
+        text-align: center;"><span>福岡大学</span><span>工学部</span> </h1>
+    </header>
+    <div id="container" style="background-color: #ffffff;">
+        <div class="side-padding">
+            <div style="padding-top:50px;" id="shigen"></div>
+            <div class="title" style="font-weight:700; text-align: left;" >
+                資源循環・環境グループ　教員紹介
+            </div>
+            <div style="padding-top:50px;"></div>
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <script>
+
+                                function teacher({ name, shikaku, img }) {
+                                    var text = `
+                    
+                                            <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                                                                                               
+                                                <div style="max-width:200px; margin: 0 auto; box-shadow:   0 0 30px #EEEEF0;text-align:left;">
+                                                    <div style="background-image: url(${img}); width:100%; padding-top: 100%; background-position: center; background-size: contain;background-repeat: no-repeat; ">
+                                                    </div>
+                                                </div>
+                                                <br> 
+                                                
+                                                <div style="max-width:200px; margin: 0 auto;text-align:left;">
+                                                <h5 style="text-align: left;">
+                                                    <b>${name} <font size="2">${shikaku}</font></b>
+                                                </h5>
+                                              
+                                                </div>
+                    
+                                                
+                    
+                                                
+                    
+                                                <br>  <br>
+                                            </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+                                teacher({
+                                    name: "添田 政司",
+                                    shikaku: "教授",
+                                    img: "../img/staff/tec/soeda.webp",
+                                  
+                                });
+                                teacher({
+                                    name: "田中 綾子",
+                                    shikaku: "教授",
+                                    img: "../img/staff/tec/tanaka.webp",
+                                });
+                                teacher({
+                                    name: "柳橋 泰生",
+                                    shikaku: "教授",
+                                    img: "../img/staff/tec/yanaginashi.webp",
+                                });
+
+
+                                teacher({
+                                    name: "山本 俊浩",
+                                    shikaku: "教授",
+                                    img: "../img/staff/tec/yamamoto.webp",
+                                });
+                                teacher({
+                                    name: "為田 一雄",
+                                    shikaku: "准教授",
+                                    img: "../img/staff/tec/tameda.webp",
+                                });
+
+                            
+
+                            </script>
+                            <br><br>
+                        </div>
+                          
+                        <div class="row">
+                            <script>
+
+                                function assistant({ name, shikaku}) {
+                                    var text = `
+                    
+                                           
+                                    <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                   
+               
+                    
+                    <h5 style="text-align: left;max-width:200px; margin: 0 auto;">
+                        <b>${name} <font size="2">${shikaku}</font></b>
+                    </h5>
+                   
+                <div style="padding-bottom:15px;"></div>
+
+                    
+
+                    
+
+                </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+
+                                assistant({
+                                    name: "武下 俊宏",
+                                    shikaku: "准教授",
+                                   
+                                });
+                    
+
+
+
+                            </script>
+                            <br><br>  <br><br>
+                            
+                        </div>
+                      
+                       
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div style="padding-top:50px;" id="zugaku"></div>
+            <div class="title" style="font-weight:700; text-align: left;" >
+                図学教室　教員紹介
+            </div>
+            <div style="padding-top:50px;"></div>
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <script>
+
+                                function teacher({ name, shikaku, img }) {
+                                    var text = `
+                    
+                                            <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                                                                                               
+                                                <div style="max-width:200px; margin: 0 auto; box-shadow:   0 0 30px #EEEEF0;text-align:left;">
+                                                    <div style="background-image: url(${img}); width:100%; padding-top: 100%; background-position: center; background-size: contain;background-repeat: no-repeat; ">
+                                                    </div>
+                                                </div>
+                                                <br> 
+                                                
+                                                <div style="max-width:200px; margin: 0 auto;text-align:left;">
+                                                <h5 style="text-align: left;">
+                                                    <b>${name} <font size="2">${shikaku}</font></b>
+                                                </h5>
+                                              
+                                                </div>
+                    
+                                                
+                    
+                                                
+                    
+                                                <br>  <br>
+                                            </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+                                teacher({
+                                    name: "酒井 幸仁",
+                                    shikaku: "准教授",
+                                    img: "../img/staff/tec/sakai.webp",
+                                  
+                                });
+                                teacher({
+                                    name: "奈尾 信英",
+                                    shikaku: "准教授",
+                                    img: "../img/staff/tec/nao.webp",
+                                });
+                            </script>
+                            <br><br>
+                        </div>
+                   
+                        <div class="row">
+                            <script>
+
+                                function assistant({ name, shikaku}) {
+                                    var text = `
+                    
+                                           
+                                    <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                   
+               
+                    
+                    <h5 style="text-align: left;max-width:200px; margin: 0 auto;">
+                        <b>${name} <font size="2">${shikaku}</font></b>
+                    </h5>
+                   
+                <div style="padding-bottom:15px;"></div>
+
+                    
+
+                    
+
+                </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+
+                                assistant({
+                                    name: "長友 謙二",
+                                    shikaku: "助手",
+                                   
+                                });
+                    
+
+
+
+                            </script>
+                            <br><br>  <br><br>
+                            
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div style="padding-top:50px;" id="mono"></div>
+            <div class="title" style="font-weight:700; text-align: left;" >
+                <span>ものづくりセンター　</span> <span>教員紹介</span>
+            </div>
+            <div style="padding-top:50px;"></div>
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <script>
+
+                                function teacher({ name, shikaku, img }) {
+                                    var text = `
+                    
+                                            <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                                                                                               
+                                                <div style="max-width:200px; margin: 0 auto; box-shadow:   0 0 30px #EEEEF0;text-align:left;">
+                                                    <div style="background-image: url(${img}); width:100%; padding-top: 100%; background-position: center; background-size: contain;background-repeat: no-repeat; ">
+                                                    </div>
+                                                </div>
+                                                <br> 
+                                                
+                                                <div style="max-width:200px; margin: 0 auto;text-align:left;">
+                                                <h5 style="text-align: left;">
+                                                    <b>${name} <font size="2">${shikaku}</font></b>
+                                                </h5>
+                                              
+                                                </div>
+                    
+                                                
+                    
+                                                
+                    
+                                                <br>  <br>
+                                            </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+                                teacher({
+                                    name: "熊丸 憲男",
+                                    shikaku: "准教授",
+                                    img: "../img/staff/tec/kumamaru.webp",
+                                  
+                                });
+                            
+
+                            </script>
+                            <br><br>
+                        </div>
+                      
+                       
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <footer style="background-color:#222;">
+        <div class="side-padding">
+            <br>
+            <br>
+            <p>福岡大学工学部</p>
+            <p>
+                〒814-0180　福岡市城南区七隈八丁目19番１号
+                Tel：092-871-6631（代表）
+            </p>
+            <p style="text-align: center;">
+                &copy; 2023 福岡大学工学部</p>
+            <br>
+            <br>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

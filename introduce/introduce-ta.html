@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--   アイコン -->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+
+    <title>福岡大学工学部</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../css/6-6.css">
+
+    <script src="../js/menu.js"></script>
+    <script>showMenu("../");</script>
+
+    <style>
+        #header {
+            /*headerを全画面で見せる*/
+            width: 100%;
+            height: 30vh;
+            position: relative;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu_box"></div>
+    <header id="header">
+        <h1 style="   position: fixed;
+        top: 15vh;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        color:#fff;
+        text-shadow: 0 0 15px #666;
+        text-align: center;"><span>福岡大学</span><span>工学部</span> </h1>
+    </header>
+    <div id="container" style="background-color: #ffffff;">
+        <div class="side-padding">
+            <div style="padding-top:50px;"></div>
+            <div class="title" style="font-weight:700; text-align: left;">
+                建築学科　教員紹介
+            </div>
+            <div style="padding-top:50px;"></div>
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <script>
+
+                                function teacher({ name, shikaku, senmon, color, img, description, url }) {
+                                    var text = `
+                    
+                                           
+                                    <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                    <a  href="teacher.html?ti=${url}">
+                   
+                    <div style="max-width:200px; margin: 0 auto; background-color:${color};box-shadow:   0 0 30px #EEEEF0;text-align:left;">
+                        <div style="background-image: url(${img}); width:100%; padding-top: 100%; background-position: center; background-size: contain;background-repeat: no-repeat; ">
+                        </div>
+                    </div></a>
+                    <br> 
+                    
+                    <div style="max-width:200px; margin: 0 auto;text-align:left;">
+                    <h5 style="text-align: left;">
+                        <b>${name} <font size="2">${shikaku}</font></b>
+                    </h5>
+                    <font size="2" style="text-align: left;color: rgba(85, 85, 85, 0.95);">${senmon}</font>
+                    </div>
+
+                    
+
+                    
+
+                    <br>  <br>
+                </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+                                teacher({
+                                    name: "穴井 謙",
+                                    shikaku: "教授",
+                                    senmon: "建築環境学 <br>環境音響学<br>騒音制御工学",
+                                    color: "white",
+                                    img: "../img/staff/ta/anai.webp",
+                                    description: "どんな用途の建物からも切り離せない「環境」の視点から、暮らしを豊かにする空間のことを考えて研究しています。人が健康で快適に過ごせる建物、そして人と地球に優しい建物をつくるためには、その内部空間に生じる「音・光」といった環境の物理現象を的確に予測しながらデザインに反映し、また、環境をコントロールする先端技術を取り入れていく必要があります。デザインと技術のバランスを考えながら、「環境」の研究に取り組んでいます。",
+                                    url: "anai",
+
+                                });
+
+
+                                teacher({
+                                    name: "池添 昌幸",
+                                    shikaku: "教授",
+                                    senmon: "建築計画学<br>住環境デザイン<br>施設マネジメント",
+                                    color: "white",
+                                    img: "../img/staff/ta/ikezoe.webp",
+                                    description: "建築計画学は、人間の生活を原点として利用者が使いやすい建築空間の法則性を明らかにし、建築デザインの実践に役立てるものです。現在の日本は人口減少および都市縮退の時代を迎え、都市・建築の計画は新築中心のフロー型から既存建築物を長期的に利用するストック型へと転換しつつあります。本研究室では、公共施設の長期利用と適切な更新の方法、郊外住宅地の空家活用と居住継承、低密度居住のデザインなどの研究に取り組んでいます。",
+                                    url: "ikezoe",
+
+                                });
+
+                                teacher({
+                                    name: "堺 純一",
+                                    shikaku: "教授",
+                                    senmon: "建築構造学<br>鋼・コンクリート合成構造の耐震設計<br>建築構造力学",
+                                    color: "white",
+                                    img: "../img/staff/ta/sakai.webp",
+                                    description: "日本は世界でも有数の地震国家なので、建築物の耐震設計は非常に重要です。建築物は木造や鉄筋コンクリート造あるいは鉄骨造などがあり、それぞれ異なる耐震性能を持っています。本研究室では、鉄骨とコンクリートを組み合わせたハイブリッド構造を対象として、お互いの弱点をお互いの長所で補い合い、お互いの長所をさらに引き出す構造とすることで、より合理的で、より優れた耐震性能を持つ建築物の新しい構造設計法の研究開発をしています。",
+                                    url: "sakai",
+                                });
+
+                                teacher({
+                                    name: "高山 峯夫",
+                                    shikaku: "教授",
+                                    senmon: "建築学<br>建築構造<br>免震・制振構造",
+                                    color: "white",
+                                    img: "../img/staff/ta/takayama.webp",
+                                    description: "建築は地震や台風などに対して安全であることが求められています。安全な建築にする方法として主に免震構造や制振構造について研究をしています。免震・制振構造は、従来の耐震構造と異なり地震エネルギーを吸収する部材(デバイス)を建物内に組み込むことで、地震時の建物の損傷を大幅に低減できます。加えて免震構造では地震エネルギーのほぼ全てを免震層で吸収することで建物の加速度を大幅に低減し家具などの転倒も起きません。",
+                                    url: "takayama",
+                                });
+
+                                teacher({
+                                    name: "太記 祐一",
+                                    shikaku: "教授",
+                                    senmon: "西洋建築史",
+                                    color: "white",
+                                    img: "../img/staff/ta/taki.webp",
+                                    description: "<br><br>イタリア~ギリシャ~トルコなど地中海沿岸の地域には、4世紀から6世紀にかけて数多くの教会建築が建設されました。どのような作品が、どのような場所に建てられ、どのように使用されてきたのか、宮殿や都市など関連する分野も含めて研究をしてきました。また後世の人々は、こうした古い時代の建築作品をどう評価してきたのか、そこから新しい建築はどのように生まれてきたのか、19世紀のドイツを中心に研究しています。",
+                                    url: "taki",
+                                });
+                                teacher({
+                                    name: "田中 照久",
+                                    shikaku: "准教授",
+                                    senmon: "建築構造学<br>鋼構造の耐震設計<br>接合技術",
+                                    color: "white",
+                                    img: "../img/staff/ta/tanaka.webp",
+                                    description: "主に鋼構造を対象とし、鉄鋼材料の特性を活かした接合要素の開発とその応用について研究しています。大地震に対する「人命の確保」に加えて「地震直後の機能継続」という高度な耐震性能が求められています。一方で、建設人手不足に対する生産性向上に向けた技術開発が進む中、建築物の省資源・長寿命化のための新たな設計施工法が望まれています。こうした状況を受け、独自技術の実用化と製品化を進めながら、これらの課題を解決するための取り組みを行っています。",
+                                    url: "tanaka",
+                                });
+
+
+                                teacher({
+                                    name: "趙 翔",
+                                    shikaku: "教授",
+                                    senmon: "建築学<br>建築設計・計画<br>健康環境",
+                                    color: "white",
+                                    img: "../img/staff/ta/zhao.webp",
+                                    description: "食事と同じように、人びとの毎日の生活は建築と関わっています。そのため、建築設計や健康環境に関する研究の目標は、いずれも人間の行為を対象にしています。その目標を実現するために、主に行為学、計画学の理論と方法を用いて研究し、また研究成果を応用することができるEBD(Evidence Based Design)設計を実践しています。このように研究と設計を連動することで、建築の社会的持続可能(Social Sustainability)というコンセプト、実践例を社会に提示します。",
+                                    url: "zhao",
+                                });
+                                teacher({
+                                    name: "塚越 雅幸",
+                                    shikaku: "准教授",
+                                    senmon: "建築防水 <br>建築物の長寿命化<br>環境負荷低減材料",
+                                    color: "white",
+                                    img: "../img/staff/ta/tsukagoshi.webp",
+                                    description: "「建築物の長寿命化」と「循環型建築材料」をキーワードに、地球環境にやさしく、長く安全・快適に暮らせる建築物の実現を目指した研究を行っています。建築物の健全性の評価手法の確立と、劣化した建築物の快適性・耐久性向上のため、適切な補修と保護するための新たな材料と工法の開発に取り組んでいます。さらに、産業副産物の建築材料への有効利用と、資源の再利用の可能性についての研究を行っています。",
+                                    url: "tsukagoshi",
+                                });
+
+
+                                teacher({
+                                    name: "宮崎 慎也",
+                                    shikaku: "准教授",
+                                    senmon: "都市計画<br>建築デザイン<br>地球環境",
+                                    color: "white",
+                                    img: "../img/staff/ta/miyazaki.webp",
+                                    description: "人工知能など情報技術の発展によって蓄積されるビッグデータにはさまざまな空間情報が含まれていますが、これらを組み合わせて分析することで、これまで隠れて可視化されていなかった都市空間や建築空間の特徴を抽出し、未来の都 市や建築のデザインにつなげるための新たなアイデアや知識を発見します。また、SDGsやパリ協定など、地球環境に対するアクションについても、都市形態や建築デザインの観点から考えています。",
+                                    url: "miyazaki",
+                                });
+
+                                teacher({
+                                    name: "吉澤 幹夫",
+                                    shikaku: "教授",
+                                    senmon: "建築構造設計 <br>建築耐震工学<br>建築基礎工学",
+                                    color: "white",
+                                    img: "../img/staff/ta/yoshizawa.webp",
+                                    description: "建築構造設計の目的は、強用・美を兼ね備えた質の高い建築を、社会性と経済性を考慮して意匠設計・設備設計と協働して創り出すことにあります。建築空間はその骨格である構造で支えられており、安全で安心な空間を創造する上で、構造設計は重要な役割を担います。地震国である我が国では、建築に必要とする耐震安全性を合理的に確保する手法が構造設計の良否を左右します。このような観点から実践的に構造設計を研究しています。",
+                                    url: "yoshizawa",
+                                });
+
+
+
+                            </script>
+                            <br><br>
+                            
+                        </div>
+                        <div class="row">
+                            <script>
+
+                                function assistant({ name, shikaku}) {
+                                    var text = `
+                    
+                                           
+                                    <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                   
+               
+                    
+                    <h5 style="text-align: left;max-width:200px; margin: 0 auto;">
+                        <b>${name} <font size="2">${shikaku}</font></b>
+                    </h5>
+                   
+                <div style="padding-bottom:15px;"></div>
+
+                    
+
+                    
+
+                </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+                                assistant({
+                                    name: "倉富 洋",
+                                    shikaku: "助教",
+                                    
+
+                                });
+
+
+                                assistant({
+                                    name: "四ヶ所 高志",
+                                    shikaku: "助教",
+                                   
+                                });
+
+                                assistant({
+                                    name: "野口 雄太",
+                                    shikaku: "助教",
+                                 
+                                });
+
+                                assistant({
+                                    name: "野田 りさ",
+                                    shikaku: "助教",
+                                   
+                                });
+
+                                assistant({
+                                    name: "本田 悟",
+                                    shikaku: "助教",
+                                  
+                                });
+                                assistant({
+                                    name: "松永 一郎",
+                                    shikaku: "助教",
+                                   
+                                });
+
+
+                                assistant({
+                                    name: "森田 慶子",
+                                    shikaku: "助教",
+                                   
+                                });
+                                assistant({
+                                    name: "劉 懋",
+                                    shikaku: "助教",
+                                   
+                                });
+
+
+                       
+                      
+
+
+
+                            </script>
+                            <br><br>  <br>
+                            
+                        </div>
+                        <div class="row">
+                            <script>
+
+                                function assistant({ name, shikaku}) {
+                                    var text = `
+                    
+                                           
+                                    <div class="col-md-4 col-sm-6 col-6"  >
+                    
+                                            
+                   
+               
+                    
+                    <h5 style="text-align: left;max-width:200px; margin: 0 auto;">
+                        <b>${name} <font size="2">${shikaku}</font></b>
+                    </h5>
+                   
+                <div style="padding-bottom:15px;"></div>
+
+                    
+
+                    
+
+                </div>
+                                        `;
+                                    document.write(text);
+                                }
+
+
+
+
+                                assistant({
+                                    name: "楠本 彩七",
+                                    shikaku: "助手",
+                                   
+                                });
+
+                      
+
+
+
+                            </script>
+                            <br><br>  <br><br>
+                            
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <footer style="background-color:#222;">
+        <div class="side-padding">
+            <br>
+            <br>
+            <p>福岡大学工学部</p>
+            <p>
+                〒814-0180　福岡市城南区七隈八丁目19番１号
+                Tel：092-871-6631（代表）
+            </p>
+            <p style="text-align: center;">
+                &copy; 2023 福岡大学工学部</p>
+            <br>
+            <br>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

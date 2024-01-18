@@ -1,0 +1,85 @@
+/* ac1 */
+.ac1 dl,
+.ac1 dt,
+.ac1 dd {
+    margin: 0;
+    padding: 0;
+}
+
+.ac1 dl+dl {
+    margin-top: 1rem;
+}
+
+.ac1 dt,
+.ac1 dd {
+    padding: 10px;
+}
+
+.ac1 dl {
+    position: relative;
+    overflow: hidden;
+}
+
+.ac1 dl>input {
+    display: none;
+}
+
+.ac1 dl>label {
+    width: 100%;
+    margin: 0;
+}
+
+.ac1 dt {
+    position: relative;
+    z-index: 1;
+    padding-right: 40px;
+    cursor: pointer;
+    background: #e6e6e6;
+    transition: .4;
+    border: solid 1px #adadad;
+}
+
+.ac1 dd {
+    position: absolute;
+    visibility: hidden;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: .4s;
+    background: #f5f5f5;
+    border: solid 1px #adadad;
+    border-top: none;
+}
+
+.ac1 dl>input:checked+label+dd {
+    position: relative;
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.ac1 dt::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    top: 50%;
+    right: 10px;
+    background: #666;
+    transform: translateY(-50%);
+}
+
+.ac1 dt::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 20px;
+    height: 3px;
+    background: #666;
+    transition: .4s;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.ac1 dl>input:checked+label>dt::after {
+    transform: translateY(-50%) rotate(180deg);
+}

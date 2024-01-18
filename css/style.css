@@ -1,0 +1,496 @@
+* {
+  letter-spacing: 0.1em;
+  line-height: 1.6em !important;
+  font-family: 'Noto Sans JP', sans-serif !important;
+  font-weight: 100;
+}
+
+span {
+  display: inline-block;
+}
+
+body {
+  margin: 0px;
+}
+
+
+footer{
+	position: relative;
+  z-index: 2;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+footer p{
+  padding: 8px;
+  margin: 0;
+  text-align: left; 
+  color: white;
+}
+
+.gakka-image{
+  padding-top: 70%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  padding: 0.2em 0 0.2em 0.7em;
+  border-left: 6px solid #8d0000;
+
+  font-size: 1.6rem;
+}
+
+
+.catchcopy {
+  text-align: left;
+  line-height: 50px;
+  font-weight: bold;
+  max-width: 1000px;
+  /*  */
+  /* パソコンサイズのとき */
+  font-size: 40px;
+}
+
+@media (max-width:600px){
+  .catchcopy{
+    font-size: 30px;
+  }
+}
+
+
+/* タブの切り替え */
+.tab_container {
+  padding-bottom: 1em;
+  background-color: #fff;
+  border: 1px solid #8d0000;
+  margin: 0 auto;
+}
+
+.tab_item {
+  width: calc(100%/3);
+  padding: 15px 0;
+  border-bottom: 3px solid #8d0000;
+  background-color: #ececec;
+  text-align: center;
+  color: #8d0000;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+input[name="tab_item"] {
+  display: none;
+}
+
+.tab_content {
+  display: none;
+  padding: 1em 1em 0;
+  clear: both;
+  overflow: hidden;
+}
+
+#tab1:checked~#tab1_content,
+#tab2:checked~#tab2_content,
+#tab3:checked~#tab3_content {
+  display: block;
+}
+
+.tab_container input:checked+.tab_item {
+  background-color: #8d0000;
+  color: #fff;
+}
+
+
+
+.main_font {
+  font-size: 1.4rem;
+  color: rgba(85, 85, 85, 0.95);
+  line-height: 1.75;
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  /* グラデーションの高さを調整 */
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 1), rgba(27, 27, 27, 0));
+  /* グラデーションのスタイルを調整 */
+  pointer-events: none;
+}
+
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  /* グラデーションの高さを調整 */
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  /* グラデーションのスタイルを調整 */
+  pointer-events: none;
+}
+
+
+/* 対象の要素に対して文字間隔を設定 */
+.special-text {
+  letter-spacing: -1px;
+  /* マイナスの値を調整してください */
+}
+
+a {
+  text-decoration: none;
+  /* リンクの下線を無効にする */
+  color: inherit;
+  /* リンクの色を親要素の色に合わせる */
+}
+
+
+
+
+.accordion-006 {
+  max-width: 100%;
+  margin-bottom: 7px;
+  background-color: #f5f5f7;
+  border-radius: 5px;
+}
+
+.accordion-006 summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1em 2em;
+  color: #333333;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.accordion-006 summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-006 summary::after {
+  transform: translateY(-25%) rotate(45deg);
+  width: 7px;
+  height: 7px;
+  margin-left: 10px;
+  border-bottom: 3px solid #c5c5c7;
+  border-right: 3px solid #c5c5c7;
+  content: '';
+  transition: transform .3s;
+}
+
+.accordion-006[open] summary::after {
+  transform: rotate(225deg);
+}
+
+.accordion-006 p {
+  transform: translateY(-10px);
+  opacity: 0;
+  margin: 0;
+  padding: .3em 2em 1.5em;
+  color: #333333;
+  transition: transform .5s, opacity .5s;
+}
+
+.accordion-006[open] p {
+  transform: none;
+  opacity: 1;
+}
+
+.inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.list_anchor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.list_anchor li {
+  width: calc(50% - 10px);
+  /* 2列表示で、10pxはマージンとして追加 */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  list-style-type: none;
+  /* リストアイテムのマーカーを非表示にする */
+}
+
+.list_anchor li a {
+  display: block;
+  line-height: 1;
+  position: relative;
+  text-decoration: none;
+  padding: 5px 5px;
+  font-weight: 500;
+  position: relative;
+
+  /* 下線を追加 */
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 0.8px solid #999;
+    /* 下線のスタイルを指定 */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
+    /* 下線を中央に配置 */
+  }
+}
+
+/* スマートフォンの場合も2列にする */
+@media (max-width: 768px) {
+  .list_anchor li {
+    width: calc(50% - 10px);
+    /* 2列表示で、10pxはマージンとして追加 */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+}
+
+.main-field {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  /* 必要に応じてz-indexを調整して他の要素と重なり順を設定 */
+  background-color: white;
+  /* 背景色を設定 */
+  /* その他のスタイルを必要に応じて追加 */
+
+}
+
+
+.line-container {
+  position: relative;
+}
+
+.line {
+  width: 100%; /* 要素の幅に合わせる */
+  height: 2px; /* 線の高さを設定 */
+  background-color: #000; /* 線の色を指定 */
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .mobile-img {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+ 
+  .pc-img {
+    display: none;
+  }
+}
+
+
+
+
+
+
+/*ボタンのcss  */
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #1d1d1f;
+  border: solid 2px #1d1d1f;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.btn-flat-border:hover {
+  background: #1d1d1f;
+  color: white;
+}
+
+
+.btn-flat-border-white {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: white;
+  border: solid 2px white;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.btn-flat-border-white:hover {
+  background: white;
+  color: #1d1d1f;
+}
+
+.ellipsis-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px; /* 制限したい幅を指定 */
+}
+
+
+
+a.btn_07 {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	color: #8d0000;
+	border-bottom: 2px solid #8d0000;
+	border-radius: 100vh;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+	transition: 0.5s;
+}
+a.btn_07:hover {
+	color: #fff;
+	background: #8d0000;
+	border-bottom: 2px solid #fff;
+	transform: translateY(3px);
+}
+
+
+.side_line{
+  display: flex;
+  align-items: center; /* 垂直中心 */
+  justify-content: center; /* 水平中心 */
+}
+
+.side_line:before, .catch:after {
+  border-top: 2px solid #8d0000;
+  content: "";
+  width: 3em; /* 線の長さ */
+}
+.side_line:before {
+  margin-right: 1em; /* 文字の右隣 */
+}
+.side_line:after {
+  margin-left: 1em; /* 文字の左隣 */
+}
+
+
+
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+dd {
+  margin-left: 0;
+}
+
+.flow {
+  border: 3px solid #999;
+}
+.flow > li {
+  padding: 30px;
+}
+.flow > li:not(:last-child) {
+  border-bottom: 3px solid #999;
+  position: relative;
+  list-style-type: none;
+}
+.flow > li:not(:last-child)::before,
+.flow > li:not(:last-child)::after {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 15%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.flow > li:not(:last-child)::before {
+  border-width: 22px;
+  border-top-color: #999;
+}
+.flow > li:not(:last-child)::after {
+  border-width: 18px;
+  border-top-color: #fff;
+}
+.flow > li dl {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.flow > li dl dt {
+  font-size: 20px;
+  font-weight: 600;
+  color: #8d0000;
+  -ms-flex-preferred-size: 20%;
+  flex-basis: 20%;
+  margin-right: 1vw;
+  text-align: center;
+}
+
+
+.sub {
+	position: relative;
+	border-bottom: 5px solid #999;
+	padding: 10px 0;
+	}
+.sub:before {
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 20%;
+	height: 5px;
+	content: '';
+	background: #8d0000;
+	}
+
+
+
+  
+.email-container {
+  display: flex;
+  align-items: center; /* アイコンを縦方向に中央揃え */
+}
+
+.email-icon {
+  width: 30px; /* アイコンの幅 */
+  height: 30px; /* アイコンの高さ */
+  margin-right: 8px; /* アイコンとテキストの間隔 */
+}
