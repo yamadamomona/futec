@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--   アイコン -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <title>福岡大学工学部</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navi.css">
+    <link rel="stylesheet" type="text/css" href="css/6-6.css">
+
+    <script src="js/menu.js"></script>
+    <script>showMenu("./");</script>
+
+    <style>
+        #header {
+            /*headerを全画面で見せる*/
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            ;
+        }
+
+        #header:before {
+            /*headerの疑似要素に背景画像を指定*/
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            background: url("img/ta_top.webp") no-repeat center;
+            /*背景画像設定※オリジナル画像を設定してください*/
+            background-size: cover;
+            background-position: 25% 50%
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="menu_box"></div>
+    <header id="header">
+        <h1 style="   position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        color:#fff;
+        text-shadow: 0 0 15px #666;
+        text-align: center;">建築学科</h1>
+    </header>
+
+
+    <div id="container" style="background-color: #272727;color:white;">
+
+        <div class="side-padding">
+            <div style="padding-top: 100px;"></div>
+            <div class="catchcopy">
+                <span style="display: inline-block;font-weight: 700;">
+                    社会や人々の
+                </span><span style="display: inline-block;font-weight: 700;">
+                    ニーズ、
+                </span><span style="display: inline-block;font-weight: 700;">
+                    自然環境との調和
+                </span><span style="display: inline-block;font-weight: 700;">
+                    を踏まえた
+                </span><span style="display: inline-block;font-weight: 700;">
+                    建築。
+                </span><span style="display: inline-block;font-weight: 700;">
+                    それを計画・設計
+                </span><span style="display: inline-block;font-weight: 700;">
+                    できる
+                </span><span style="display: inline-block;font-weight: 700;">
+                    建築士への幅広い学び。
+                </span>
+            </div>
+            <div class="main-font" style="text-align: left;padding-top: 50px;">
+
+                建築学科では古代ローマの建築所の「強・用・美」という言葉のように、バランスの取れた専門家の育成を目指します。門戸は常に広く開かれており、学ぶ動機はデザインやインテリア、あるいは防災や環境問題など様々なものが考えれらます。社会や人々のニーズにこたえる、プロフェショナルとよぶにふさわしい実力を持った建築家や建築技術者を目指して、基本的なことから専門的・実践的なことへと地域と連携しつつ、学生の力を着実に伸ばしていきます。
+            </div>
+            <!--/container-->
+            <div style="padding-top: 100px;"></div>
+        </div>
+
+
+    </div>
+    <div id="container" style="padding:0px 0px 0px 0px;background-color: white;">
+        <div class="image-container">
+            <img src="./img/architecture/design.webp" alt="" style="width:100%;">
+        </div>
+    </div>
+
+
+
+    <div id="container" style="background-color: white;color:#272727;padding-top: 0px;">
+
+
+        <div class="side-padding">
+            <div style="padding-top: 50px;"></div>
+            <h1 style="text-align: left;font-size: 40px;">Keywords</h1>
+            <div style="padding-top: 25px;"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <h4 style="text-align: left;">#<b>建築士</b></h4>
+                        <h4 style="text-align: left;">#<b>家の設計</b></h4>
+                        <h4 style="text-align: left;">#<b>まちづくり</b></h4>
+                    </div>
+                    <div class="col-12 col-md-4">
+
+                        <h4 style="text-align: left;">#<b>大きなビル</b></h4>
+                        <h4 style="text-align: left;">#<b>災害に強い建物</b></h4>
+                        <h4 style="text-align: left;">#<b>ものづくり</b></h4>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h4 style="text-align: left;">#<b><span>インテリア</span><span>デザイン</span></b></h4>
+                        <h4 style="text-align: left;">#<b><span>建築会社の</span><span>社長</span> </b></h4>
+                        <h4 style="text-align: left;">#<b><span>地球に</span><span>やさしいビル</span></b></h4>
+                    </div>
+                </div>
+                <div style="padding-top: 50px;"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div id="container" style="background-color: #EEF0F0;color: hsl(0, 0%, 15%);text-align: left;">
+
+        <div class="side-padding">
+            <h1 style="padding-top: 4em;"><span>建築学科での</span><span>4年間</span></h1>
+
+            <script>
+                function history({ year, word, explanation, img1, img2 }) {
+                    var text = `
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div style="font-size:24px;padding-top:70px;text-align:left;"><b>${year}</b></div>
+                                <div style="font-size:24px;padding-top:35px;text-align:left;"><b>${word}</b></div>
+                                <br>
+                                <div style="style="font-size: 1rem;color: rgba(85, 85, 85, 0.95);padding-top: 20px;    line-height: 1.75;padding-bottom: 30px;"">
+                                ${explanation}
+                                </div>
+                                <br><br>
+                            </div>
+                            <div class="col-md-8">
+                                <img src="${img1}" alt="" style="width:100%;padding-top:70px;">
+                            </div>
+                        </div>
+                    </div>
+                `;
+                    document.write(text);
+                }
+                history({
+                    year: "1・2年次",
+                    word: "人間形成と基礎学力の充実",
+                    explanation: "専門性と社会性が調和した人間形成および大学で建築学を学ぶのに必要な基礎学力の充実を目指して共通教育、工学および建築学の基礎をバランスよく学ぶ。",
+                    img1: "./img/architecture/1/IMG_6753.webp",
+                    img2: "./img/architecture/2/IMG_4901.JPG",
+                });
+                history({
+                    year: "3・4年次",
+                    word: "多様な専門学習",
+                    explanation: "将来の志望進路と自身の適性・資質を考慮し、【構造・材料】【環境・設備】【歴史・意匠】【計画・設計】の各分野の専門的な学習を選択しながら、より高度で実践的な知識・能力を身につける。",
+                    img1: "./img/architecture/3/IMG_9199.webp",
+                    img2: "./img/architecture/2/sekkei.jpg",
+                });
+                history({
+                    year: "4年次",
+                    word: "卒業計画により専門性の追究",
+                    explanation: "目指す進路を踏まえた自分の興味や関心に合わせ、作品設計あるいは研究論文を選択し、専門性を究める。",
+                    img1: "./img/architecture/study/talk.webp",
+                    img2: "./img/architecture/study/talk.jpg",
+                });
+            </script>
+            <div style="padding-bottom: 4em;"></div>
+        </div>
+    </div>
+    <div id="container" style="background-color: white;color:#272727;padding-top: 0px;">
+        <div id="course_ta">
+            <div class="side-padding" id="course">
+                <div style="padding-top: 50px;"></div>
+                <div class="title" style="font-weight:700; text-align: left;">就職情報
+                </div>
+                <div style="padding-top: 25px;"></div>
+
+                <div style="font-size:18px;text-align:left;color:#8d0000;"><b>2020年度から2022年度の主な就職先
+                    </b></div>
+
+                <div class="container-fluid">
+                    <div class="row">
+
+
+
+                        <div class="col-12 col-md-12" style="padding-left: 0px;">
+                            <div style="padding-top: 15px;"></div>
+                            <div style="text-align: center;background-color: rgba(141,0,0,0.7);color:white;"><b>建設業</b>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-6" style="padding-right: 0px;">
+                                    <div style="padding-top: 15px;"></div>
+                                    <h6 style="text-align: left;"><b><span>清水建設</span></b></h6>
+                                    <h6 style="text-align: left;"><b><span>鹿島建設</span></b></h6>
+                                    <h6 style="text-align: left;"><b><span>大成建設</span></b></h6>
+                                    <h6 style="text-align: left;"><b>大林組</b></h6>
+                                    <h6 style="text-align: left;"><b>竹中工務店</b></h6>
+                                    <h6 style="text-align: left;"><b>熊谷組</b></h6>
+                                    <h6 style="text-align: left;"><b>戸田建設</b></h6>
+                                </div>
+                                <div class="col-md-6 col-6" style="padding-right: 0px;">
+                                    <div style="padding-top: 15px;"></div>
+                                    <h6 style="text-align: left;"><b>フジタ</b></h6>
+                                    <h6 style="text-align: left;"><b>前田建設工業</b></h6>
+                                    <h6 style="text-align: left;"><b>日本設計</b></h6>
+                                    <h6 style="text-align: left;"><b>積水ハウス</b></h6>
+                                    <h6 style="text-align: left;"><b><span>大和</span><span>ハウス</span><span>工業</span></b>
+                                    </h6>
+                                    <h6 style="text-align: left;"><b><span>長谷工</span><span>コーポレーション</span></b>
+                                    </h6>
+
+                                    <h6 style="text-align: left;"><b>九電工</b></h6>
+                                    <h6 style="text-align: left;"><b><span>新菱冷熱</span><span>工業</span></b>
+
+
+                                    </h6>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+                        <div class="col-6 col-md-4" style="padding-left: 0px;">
+                            <div style="padding-top: 15px;"></div>
+                            <div style="text-align: center;background-color: rgba(141,0,0,0.7);color:white;">
+                                <b>不動産業、物品賃貸業</b></div>
+                            <div style="padding-top: 15px;"></div>
+                            <h6 style="text-align: left;"><b>九電不動産</b></h6>
+                        </div>
+
+                        <div class="col-6 col-md-4" style="padding-left: 0px;">
+                            <div style="padding-top: 15px;"></div>
+                            <div style="text-align: center;background-color: rgba(141,0,0,0.7);color:white;"><b>公務</b>
+                            </div>
+                            <div style="padding-top: 15px;"></div>
+                            <h6 style="text-align: left;"><b>国家公務員一般職</b></h6>
+                            <h6 style="text-align: left;"><b>福岡県庁</b></h6>
+                            <h6 style="text-align: left;"><b>北九州市役所</b></h6>
+                            <h6 style="text-align: left;"><b>福岡市役所</b></h6>
+
+
+                        </div>
+
+                    </div>
+                    <div style="padding-top: 50px;"></div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="container" style="padding:50px 50px 50px 50px;background-color: #fafafa;color:black;">
+        <div class="side-padding">
+            <img src="./img/architecture/teach.webp" alt="" style="width:100%;">
+        </div>
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-12 col-md-12" style="background-color: #fafafb;">
+                    <div class="side-padding">
+                        <br> <br>
+                        <div class="title" style="text-align: left;">
+                            <span>求める人材像</span><br><span>(求める能力)</span>
+                        </div>
+                        <br>
+
+                        <br>
+
+                        <h6 style="text-align: left;color: #8d0000;">
+                            <b>
+                                知識・理解
+                            </b>
+                        </h6>
+
+                        <h6 class="research" style="text-align: left;">
+
+                            高等学校の教育内容を幅広く学修しており、工学を学ぶに十分な基礎学力を有している人
+
+                        </h6>
+
+                        <br>
+
+                        <h6 style="text-align: left;color: #8d0000;">
+                            <b>技能</b>
+                        </h6>
+
+                        <h6 class="research" style="text-align: left;">
+
+                            学習や課外活動から得た経験を踏まえて、自らの視点で物事を順序立てて説明することができる人
+
+                        </h6>
+
+                        <br>
+
+                        <h6 style="text-align: left;color: #8d0000;">
+                            <b>態度・志向性</b>
+                        </h6>
+
+                        <h6 class="research" style="text-align: left;">
+                            建築学に関する高度な専門知識と倫理観を身に着けた建築技術者になることへの夢を持ち、専門知識を社会のために積極的に活用したいと考えている人
+                        </h6>
+                        <br>
+                        <h6 style="text-align: left;color: #8d0000;"><b>能力・資質</b></h6>
+                        <h6 class="research" style="text-align: left;">自己研鑽により、英語の資格を取得した人やスポーツ活動・文化活動等で顕著な成績をおさめた人
+                        </h6>
+                        <br>
+
+                        <br> <br>
+
+                    </div>
+
+
+                </div>
+                <br> <br>
+            </div>
+
+
+
+
+
+            <!-- ############################################ -->
+
+
+
+        </div>
+
+    </div>
+
+
+    <div id="container" style="background-color: white;color:#272727;padding-top: 0px;">
+
+        <div class="container-fluid">
+            <div class="row"
+                style="background-image: url(img/architecture/individual.webp); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="col-12 col-md-12 pl-5 pr-5">
+                    <br><br><br><br>
+                    <h2 style="text-align: center;color: white;">
+                        <b>個別サイト</b>
+                    </h2>
+
+                    <div class="pc-img">
+
+                        <a href="http://www.tec.fukuoka-u.ac.jp/arch/" target="_blank">
+                            <div style="display: flex; justify-content: center;">
+                                <img src="./img/architecture/site.webp" alt="" style="width: 50%;">
+                            </div>
+                        </a>
+
+                        <br>
+                        <div style="text-align: center;">
+                            <a href="http://www.tec.fukuoka-u.ac.jp/arch/" class="btn-flat-border-white"
+                                target="_blank">個別サイトを見る</a>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="mobile-img">
+                        <a href="http://www.tec.fukuoka-u.ac.jp/arch/" target="_blank">
+                            <div style="display: flex; justify-content: center;">
+                                <img src="./img/architecture/site.webp" alt="" style="width:100%">
+
+                            </div>
+                        </a><br>
+                        <div style="text-align: center;">
+                            <div style="text-align: center;">
+                                <a href="http://www.tec.fukuoka-u.ac.jp/arch/" class="btn-flat-border-white"
+                                    target="_blank">個別サイトを見る</a>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer style="background-color:#222;">
+        <div class="side-padding">
+            <br>
+            <br>
+            <p>福岡大学工学部</p>
+            <p>
+                〒814-0180　福岡市城南区七隈八丁目19番１号
+                Tel：092-871-6631（代表）
+            </p>
+            <p style="text-align: center;">
+                &copy; 2023 福岡大学工学部</p>
+            <br>
+            <br>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

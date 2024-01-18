@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--   アイコン -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <title>福岡大学工学部</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navi.css">
+    <link rel="stylesheet" type="text/css" href="css/6-6.css">
+
+    <script src="js/menu.js"></script>
+    <script>showMenu("./");</script>
+
+    <style>
+        #header {
+            /*headerを全画面で見せる*/
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            ;
+        }
+
+        #header:before {
+            /*headerの疑似要素に背景画像を指定*/
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            background: url("img/tk_top.webp") no-repeat center;
+            /*背景画像設定※オリジナル画像を設定してください*/
+            background-size: cover;
+            background-position: 25% 50%
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="menu_box"></div>
+    <header id="header">
+        <h1 style="   position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        color:#fff;
+        text-shadow: 0 0 15px #999;
+        text-align: center;">化学システム工学科</h1>
+    </header>
+
+
+    <div id="container" style="background-color: #272727;color:white;">
+        <div class="side-padding">
+            <div style="padding-top: 100px;"></div>
+            <div class="catchcopy">
+                <span style="display: inline-block;font-weight: 700;">
+                    新素材から
+                </span><span style="display: inline-block;font-weight: 700;">
+                    環境装置
+                </span><span style="display: inline-block;font-weight: 700;">
+                    までの
+                </span><span style="display: inline-block;font-weight: 700;">
+                    幅広い分野の
+                </span><span style="display: inline-block;font-weight: 700;">
+                    研究開発
+                </span><span style="display: inline-block;font-weight: 700;">
+                    ・生産技術に
+                </span><span style="display: inline-block;font-weight: 700;">
+                    求められる
+                </span><span style="display: inline-block;font-weight: 700;">
+                    化学技術者へ。
+                </span>
+            </div>
+            <div class="main-font" style="text-align: left;padding-top: 50px;">
+
+                化学システム工学科では、分子工学の基礎となる「化学」の学習に始まり、「ものづくり」の現場で必要とされる化学工学を学ぶことにより、幅広い分野・業種で活躍できる化学技術者を育成しています。実験や演習を中心とした学科カリキュラムは企業の注目を集め、卒業生は多様な業界で活躍しています。2年次進級時に、学生の特性に対応したコース選択制度を実施。工学部の学科の中でも女子学生の割合が高い学科です。
+            </div>
+            <!--/container-->
+            <div style="padding-top: 100px;"></div>
+        </div>
+
+
+    </div>
+    <div id="container" style="padding:0px 0px 0px 0px;background-color: white;">
+        <div class="image-container">
+            <img src="./img/tk/resarch.webp" alt="" style="width:100%;">
+        </div>
+    </div>
+
+    <div id="container" style="background-color: white;color:#272727;padding-top: 0px;">
+
+        <div id="container" style="background-color: white;color:#272727;padding-top: 0px;">
+
+
+            <div class="side-padding">
+                <div style="padding-top: 50px;"></div>
+                <h1 style="text-align: left;font-size: 40px;">Keywords</h1>
+                <div style="padding-top: 25px;"></div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <h4 style="text-align: left;">#<b>化粧品</b></h4>
+                            <h4 style="text-align: left;">#<b><span>エネルギー</span><span>問題</span><span>・地球環境問題</span> </b>
+                            </h4>
+                            <h4 style="text-align: left;">#<b>化学技術者</b></h4>
+                        </div>
+                        <div class="col-12 col-md-4">
+
+                            <h4 style="text-align: left;">#<b><span>食品</span><span>・生命科学</span></b></h4>
+                            <h4 style="text-align: left;">#<b>ロケット</b></h4>
+                            <h4 style="text-align: left;">#<b>薬品</b></h4>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h4 style="text-align: left;">#<b>プログラム</b></h4>
+                            <h4 style="text-align: left;">#<b>燃料電池</b></h4>
+                            <h4 style="text-align: left;">#<b><span>カーボン</span><span>ニュートラル</span></b></h4>
+                        </div>
+                    </div>
+                    <div style="padding-top: 50px;"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="container" style="background-color: #EEF0F0;color: hsl(0, 0%, 15%);text-align: left;">
+        <div class="side-padding">
+            <h1 style="padding-top: 4em;"><span>化学システム工学科での</span><span>4年間</span></h1>
+
+            <script>
+                function history({ year, word, explanation, img1, img2 }) {
+                    var text = `
+         
+
+                <div class="container-fluid">
+                 <div class="row">
+                    <div class="col-md-4">
+                        <div style="font-size:24px;padding-top:70px;text-align:left;"><b>${year}</b></div>
+                        <div style="font-size:24px;padding-top:35px;text-align:left;"><b>${word}</b></div>
+                        <br>
+                        
+                        <div style="style="font-size: 1rem;color: rgba(85, 85, 85, 0.95);padding-top: 20px;    line-height: 1.75;padding-bottom: 30px;"">
+                         ${explanation}
+                        </div>
+                         <br><br>
+                    </div>    
+    
+
+                      <div class="col-md-8">
+                        <img src="${img1}" alt="" style="width:100%;padding-top:70px;">
+                      </div>
+    
+                </div>
+
+            </div>
+   
+  
+
+        `;
+                    document.write(text);
+                }
+
+                history({
+                    year: "1年次",
+                    word: "基礎・専門科目を学習",
+                    explanation: "化学工学・分子工学の基礎理論などについて、幅広い分野の科目を学び、2年次からのコース学習に必要な土台を形成する。",
+                    img1: "./img/tk/first.webp",
+                    img2: "./img/architecture/2/IMG_4901.JPG",
+                });
+                history({
+                    year: "2・3・4年次",
+                    word: "個性に応じた学習コースを選択",
+                    explanation: "-化学工学コース-<br>化学プラントならびに装置に関する基礎から応用までを含む充実した科目を学び、化学技術者としての進路を開く。「JABEE認定教育プログラム」修了証明が授与され、技術士法により「技術士第一次試験」が免除される。<br><br>-分子工学コース-<br>分子や結晶の性質や機能を基礎から学ぶことから、新素材・バイオ・環境・エネルギーなどの分野で活躍できる化学技術者としての進路を開く。物質を新たにデザインすることで、社会に役立つ、新材料を創生する技術を学ぶ。",
+                    img1: "./img/tk/try.webp",
+                    img2: "./img/architecture/2/sekkei.jpg",
+                });
+
+            </script>
+        </div>
+    </div>
+    <div id="container" style="background-color: white;color:#272727;padding-top: 0px;">
+        <div id="course_tk">
+            <div class="side-padding" id="course">
+                <div style="padding-top: 50px;"></div>
+                <div class="title" style="font-weight:700; text-align: left;">就職情報
+                </div>
+                <div style="padding-top: 25px;"></div>
+
+                <div style="font-size:18px;text-align:left;color:#8d0000;"><b>2020年度から2022年度の主な就職先
+                    </b></div>
+
+                <div class="container-fluid">
+                    <div class="row">
+
+
+
+                        <div class="col-12 col-md-12" style="padding-left: 0px;">
+                            <div style="padding-top: 15px;"></div>
+                            <div style="text-align: center;background-color: rgba(141,0,0,0.7);color:white;"><b>製造業</b>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-6" style="padding-right: 0px;">
+                                    <div style="padding-top: 15px;"></div>
+                                    <h6 style="text-align: left;"><b><span>旭化成</span></b></h6>
+                                    <h6 style="text-align: left;"><b><span>三菱ケミカル</span></b></h6>
+
+                                    <h6 style="text-align: left;"><b>京セラ</b></h6>
+                                    <h6 style="text-align: left;"><b>日産自動車(株)</b></h6>
+                                    <h6 style="text-align: left;"><b>凸版印刷</b></h6>
+                                    <h6 style="text-align: left;"><b>東ソー</b></h6>
+                                    <h6 style="text-align: left;"><b>東亜合成</b></h6>
+                                </div>
+                                <div class="col-md-6 col-6" style="padding-right: 0px;">
+                                    <div style="padding-top: 15px;"></div>
+                                    <h6 style="text-align: left;"><b>三井ハイテテック</b></h6>
+                                    <h6 style="text-align: left;">
+                                        <b><span>日鉄</span><span>ケミカル</span><span>＆</span><span>マテリアル</span></b>
+                                    </h6>
+                                    <h6 style="text-align: left;"><b>日本化薬</b></h6>
+                                    <h6 style="text-align: left;"><b>日清製粉</b></h6>
+                                    <h6 style="text-align: left;"><b>カゴメ</b></h6>
+
+
+
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+                        <div class="col-6 col-md-4" style="padding-left: 0px;">
+                            <div style="padding-top: 15px;"></div>
+                            <div style="text-align: center;background-color: rgba(141,0,0,0.7);color:white;"><b>建設業</b>
+                            </div>
+                            <div style="padding-top: 15px;"></div>
+                            <h6 style="text-align: left;"><b>九電工</b></h6>
+                            <h6 style="text-align: left;"><b><span>西日本</span><span>プラント</span><span>工業</span></b></h6>
+                            <h6 style="text-align: left;"><b><span>三菱</span><span>ケミカル</span><span>エンジニアリング</span></b>
+                            </h6>
+                        </div>
+                        <div class="col-6 col-md-4" style="padding-left: 0px;">
+                            <div style="padding-top: 15px;"></div>
+                            <div style="text-align: center;background-color: rgba(141,0,0,0.7);color:white;">
+                                <b>電気・ガス・熱供給・水道業</b></div>
+                            <div style="padding-top: 15px;"></div>
+                            <h6 style="text-align: left;"><b>九州電力</b></h6>
+
+                        </div>
+                        <div class="col-6 col-md-4" style="padding-left: 0px;">
+                            <div style="padding-top: 15px;"></div>
+                            <div style="text-align: center;background-color: rgba(141,0,0,0.7);color:white;">
+                                <b>情報通信業</b></div>
+                            <div style="padding-top: 15px;"></div>
+
+                            <h6 style="text-align: left;"><b>富士通</b></h6>
+                        </div>
+                        <div class="col-6 col-md-4" style="padding-left: 0px;">
+                            <div style="padding-top: 15px;"></div>
+                            <div style="text-align: center;background-color: rgba(141,0,0,0.7);color:white;">
+                                <b>卸売業、小売業</b></div>
+                            <div style="padding-top: 15px;"></div>
+                            <h6 style="text-align: left;"><b><span>横河</span><span>ソリューション</span><span>サービス</span></b>
+                            </h6>
+                        </div>
+                        <div class="col-6 col-md-4" style="padding-left: 0px;">
+                            <div style="padding-top: 15px;"></div>
+                            <div style="text-align: center;background-color: rgba(141,0,0,0.7);color:white;">
+                                <b>学術研究、専門・技術サービス業</b></div>
+                            <div style="padding-top: 15px;"></div>
+                            <h6 style="text-align: left;"><b><span>西部ガス</span><span>ホールディングス</span></b></h6>
+                            <h6 style="text-align: left;"><b><span>東ソー</span><span>分析</span><span>センター</span></b></h6>
+                        </div>
+
+                    </div>
+                    <div style="padding-top: 50px;"></div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <div id="container" style="background-color: #fafafa;color:black;">
+        <div class="side-padding">
+            <div style="padding-top: 50px;"></div>
+            <img src="./img/tk/open.webp" alt="" style="width:100%;">
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-12 col-md-12" style="background-color: #fafafb;">
+                    <div class="side-padding">
+                        <br> <br>
+                        <div class="title" style="text-align: left;">
+                            <span>求める人材像</span><br><span>(求める能力)</span>
+                        </div>
+                        <br>
+                        <br>
+
+                        <h6 style="text-align: left;color: #8d0000;">
+                            <b>
+                                知識・理解
+                            </b>
+                        </h6>
+
+                        <h6 class="research" style="text-align: left;">
+
+                            高等学校の教育内容を幅広く学修し、工学を学ぶに十分な基礎学力を有している人
+
+                        </h6>
+
+                        <br>
+
+                        <h6 style="text-align: left;color: #8d0000;">
+                            <b>技能</b>
+                        </h6>
+
+                        <h6 class="research" style="text-align: left;">
+
+                            学習や課外活動から得た経験を踏まえて、自らの視点で物事を順序立てて説明することができる人
+
+                        </h6>
+
+                        <br>
+
+                        <h6 style="text-align: left;color: #8d0000;">
+                            <b>態度・志向性</b>
+                        </h6>
+
+                        <h6 class="research" style="text-align: left;">
+                            化学や化学工学に関する専門知識と倫理観を身に付けた化学技術者や環境技術者を目指す人
+                        </h6>
+                        <br>
+                        <h6 style="text-align: left;color: #8d0000;"><b>能力・資質</b></h6>
+                        <h6 class="research" style="text-align: left;">英語の資格を取得した人、課外活動（体育・文化・ボランティア）で顕著な成果を収めた人
+                        </h6>
+                        <br>
+
+                        <br> <br>
+                    </div>
+
+                </div>
+
+
+
+                <!-- ############################################ -->
+            </div>
+
+
+        </div>
+
+
+
+        <div id="container" style="background-color: white;color:#272727;padding-top: 0px;">
+
+            <div class="container-fluid">
+                <div class="row"
+                    style="background-image: url(img/tk/individual.webp); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <div class="col-12 col-md-12 pl-5 pr-5">
+                        <br><br><br><br>
+                        <h2 style="text-align: center;color: white;">
+                            <b>個別サイト</b>
+                        </h2>
+
+                        <div class="pc-img">
+
+                            <a href="http://www.tec.fukuoka-u.ac.jp/tk/index.html" target="_blank">
+                                <div style="display: flex; justify-content: center;">
+                                    <img src="./img/tk/site.webp" alt="" style="width: 50%;">
+                                </div>
+                            </a>
+
+                            <br>
+                            <div style="text-align: center;">
+                                <a href="http://www.tec.fukuoka-u.ac.jp/tk/index.html" class="btn-flat-border-white"
+                                    target="_blank">個別サイトを見る</a>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="mobile-img">
+                            <a href="http://www.tec.fukuoka-u.ac.jp/tk/index.html" target="_blank">
+                                <div style="display: flex; justify-content: center;">
+                                    <img src="./img/tk/site.webp" alt="" style="width:100%">
+
+                                </div>
+                            </a><br>
+                            <div style="text-align: center;">
+                                <div style="text-align: center;">
+                                    <a href="http://www.tec.fukuoka-u.ac.jp/tk/index.html" class="btn-flat-border-white"
+                                        target="_blank">個別サイトを見る</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer style="background-color:#222;">
+            <div class="side-padding">
+                <br>
+                <br>
+                <p>福岡大学工学部</p>
+                <p>
+                    福岡大学　工学部
+                    〒814-0180　福岡市城南区七隈八丁目19番１号
+                    Tel：092-871-6631（代表）
+                </p>
+                <p style="text-align: center;">
+                    &copy; 2023 福岡大学工学部</p>
+                <br>
+                <br>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

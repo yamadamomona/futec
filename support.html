@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--   アイコン -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <title>福岡大学工学部</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navi.css">
+    <link rel="stylesheet" type="text/css" href="css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="css/6-6.css">
+
+
+    <script src="js/menu.js"></script>
+    <script>showMenu("./");</script>
+    <style>
+        #header {
+            /*headerを全画面で見せる*/
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        #header:before {
+            /*headerの疑似要素に背景画像を指定*/
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            /* デフォルトの背景画像 - スマートフォン以外で表示 */
+            background: url("img/support_pc.webp") no-repeat center;
+            /*背景画像設定※オリジナル画像を設定してください*/
+            background-size: cover;
+            background-position: 0% 50%;
+        }
+
+        /* スマートフォン用のスタイル */
+        @media (max-width: 768px) {
+            #header:before {
+                /* スマートフォンでの表示用の背景画像 */
+                background: url("img/support_telephone.webp") no-repeat center;
+                /* スマートフォン用背景画像の設定※オリジナル画像を設定してください */
+                background-size: cover;
+                background-position: center;
+                background-position: 30% 0%;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            #header:before {
+                /* タブレットでの表示用の背景画像 */
+                background: url("img/support_telephone.webp") no-repeat center;
+                /* タブレット用背景画像の設定※オリジナル画像を設定してください */
+                background-size: cover;
+                background-position: center;
+
+                background-position: 70% 0%;
+            }
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <div id="menu_box"></div>
+    <header id="header">
+
+
+
+
+    </header>
+
+
+    <div id="container" style="color:#272727;">
+        <div class="side-padding">
+            <div style="padding-top: 100px;"></div>
+            <div class="catchcopy">
+                <div style="border: solid 3px #999;padding-left:10px;">
+                    <span style="display: inline-block;font-weight: 700;">
+                        福岡大学
+                    </span><span style="display: inline-block;font-weight: 700;">
+                        工学部は
+                    </span><span style="display: inline-block;font-weight: 700;">
+                        「教育重視」
+                    </span>
+                </div>
+
+
+
+            </div>
+
+            <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="main-font" style="text-align: left;padding-top: 75px;">
+                            福岡大学工学部は特に「教育」を重視しており、私立大学ならではの丁寧で手厚い教育を行っております。具体的には、工学技術者として必要な基礎教育を、手を抜くことなく1から10までしっかり行っています。そして、それだけでなく、国立大学と遜色のない高度な内容まできちんと教育しており、学生たちには卒業までにしっかりと実力を付けさせて社会に送り出しております。<br>その結果、産業界からは「福岡大学工学部の卒業生は基礎がしっかり身についている」と高い評価の声をいただいています。
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./img/cut.webp" alt="" style="width:100%;padding-top: 75px;">
+                    </div>
+                </div>
+            </div>
+
+
+            <!--/container-->
+
+        </div>
+    </div>
+
+    <div id="container" style="color:#272727;">
+        <div class="side-padding">
+            <div style="padding-top: 50px;"></div>
+
+            <div class="title" style="font-weight:700; text-align: left;">わかりやすい授業
+            </div>
+            <div class="main-font" style="text-align: left;padding-top: 25px;">
+                講義に加え、演習やアクティブラーニングなど思考力、発信力を修得し、自ら課題を発見し、解決する力を養います。
+            </div>
+            <!--/container-->
+
+        </div>
+        <div class="side-padding">
+            <div style="padding-top: 50px;"></div>
+            <div class="title" style="font-weight:700; text-align: left;">充実した教育スタッフによる目の行き届いた教育
+            </div>
+            <div class="main-font" style="text-align: left;padding-top: 25px;">
+                工学部では、教授、准教授、講師、助教、助手といったいわゆる教員の1人当たりの学生数が、全学年では18.3人、1学年当たりでは約4.6人となっており、実は地方国立大学並みです。ただ違うのは、本学では助教の先生など比較的若い教員が多いという点です。さらに、大学院生のTAを授業の補助として配置するなど、特に実験や実習、演習科目では目の行き届いた教育を行っています。
+
+            </div>
+            <!--/container-->
+
+        </div>
+
+        <div class="side-padding">
+            <div style="padding-top: 50px;"></div>
+            <div class="title" style="font-weight:700; text-align: left;">授業時間以外にも個別に質問できる時間
+
+            </div>
+            <div class="main-font" style="text-align: left;padding-top: 25px;">
+                それでも授業の内容に十分ついていけない時があるかもしれません。そこで、授業時間以外にも個別に質問できる時間を設けていまして、これをオフィスアワーと呼んでおります。
+
+            </div>
+            <!--/container-->
+
+        </div>
+        <div class="side-padding">
+
+
+
+            <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div style="padding-top: 50px;"></div>
+                        <div class="title" style="font-weight:700; text-align: left;">工学部学習支援室T-Square
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="main-font" style="text-align: left;padding-top: 25px;">
+                            工学部では学習支援室Ｔ-Squareを設置しています。ここでは、懇切丁寧な個別学習サポートを行っており、学生の皆さんは安心して勉学に励むことができる環境が整っております。
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div style="text-align: left;padding-top: 25px;text-align: center;">
+                            <img src="img/t-square.webp" alt="" style="width:70%;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--/container-->
+
+        </div>
+        <div class="side-padding">
+            <div style="padding-top: 50px;"></div>
+            <div class="title" style="font-weight:700; text-align: left;">
+                学年持ち上がりでサポートする副担任
+            </div>
+            <div class="main-font" style="text-align: left;padding-top: 25px;">
+                工学部では、学科や学年全体のとりまとめを担当する担任教員に加え、学年持ち上がりで学生生活をサポートする副担任が学生ごとに付きます。これにより、学生の皆さん1人1人の状況に目が行き届くとともに、何でも個別に相談できる体制も整っています。
+
+
+            </div>
+            <!--/container-->
+
+        </div>
+        <div class="side-padding">
+            <div style="padding-top: 25px;"></div>
+            <h4 style="font-weight:700; text-align: left;color: #8d0000;">スムーズな学生生活のスタートをサポート
+
+            </h4>
+            <div class="main-font" style="text-align: left;padding-top: 10px;">
+                そして、新入生の皆さんに対しては、入学後に副担任が個人面談を行いながら、スムーズな大学生活のスタートが切れるようしっかりとサポートしていきます。
+
+
+            </div>
+            <!--/container-->
+
+        </div>
+        <div class="side-padding">
+            <div style="padding-top: 15px;"></div>
+            <h4 style="font-weight:700; text-align: left;color:#8d0000;">年２回の定期個人面談
+
+            </h4>
+            <div class="main-font" style="text-align: left;padding-top: 10px;">
+                その後も、副担任による年2回の定期個人面談を実施しておりまして、学修状況の確認や指導などを丁寧に行っており、安心して学生生活を送ることができます。
+            </div>
+            <!--/container-->
+
+        </div>
+        <div class="side-padding">
+            <div style="padding-top: 25px;" id="career"></div>
+            <div class="title" style="font-weight:700; text-align: left;">
+                キャリアセンターの多彩な就職活動支援メニュー
+
+            </div>
+            <div class="main-font" style="text-align: left;padding-top: 25px;">
+                福岡大学には就職活動を支援するキャリアセンターがありまして、そこでは私立大学ならではの充実した就職活動支援メニューを揃えています。
+
+
+            </div>
+            <!--/container-->
+
+        </div>
+        <div class="side-padding">
+            <div style="padding-top: 50px;"></div>
+            <div class="title" style="font-weight:700; text-align: left;">
+                学部独自の求人情報収集と企業への推薦
+
+            </div>
+            <div class="main-font" style="text-align: left;padding-top: 25px;">
+                それに加えて工学部では、業界との太いパイプを活かした独自の求人情報の集約や企業への学生の推薦などを行っており、学生の皆さんの就職活動を全面的にサポートしています。
+
+            </div>
+            <!--/container-->
+
+        </div>
+        <div class="side-padding">
+            <div style="padding-top: 50px;"></div>
+            <div class="title" style="font-weight:700; text-align: left;">
+                マンツーマンの履歴書・ES添削と面接指導
+
+            </div>
+            <div class="main-font" style="text-align: left;padding-top: 25px;">
+                また、業界をよく知る教授陣によるマンツーマンの履歴書やエントリーシートの添削、ならびに面接指導も行っています。
+
+
+            </div>
+            <!--/container-->
+
+        </div>
+        <div class="side-padding">
+            <div style="padding-top: 50px;"></div>
+            <div class="title" style="font-weight:700; text-align: left;">
+                学部独自のインターンシップ学部独自の企業説明会充実した施設・実験設備
+
+
+            </div>
+            <div class="main-font" style="text-align: left;padding-top: 25px;">
+                その他、学部独自のインターンシップや
+                企業説明会なども行っており、学生の皆さんは恵まれた環境のもとで就職活動をすることができます。
+
+
+            </div>
+            <!--/container-->
+
+        </div>
+        <div class="side-padding">
+            <div style="padding-top: 50px;" id="facility"></div>
+            <div class="title" style="font-weight:700; text-align: left;">充実した施設・実験設備
+            </div>
+            <div class="main-font" style="text-align: left;padding-top: 25px;">
+                また、福岡大学はすべての規模が大きく、施設も充実しています。キャンパスの広さは福岡PayPayドーム約45個分もありますし、学生食堂はキャンパス内に7つもあり、メニューも多彩で、バランスのとれた食事をとることができます。例えば、工学部に近い第3食堂はボリュームのあるメニューが多く、また、キャンパスの中心部にある第1食堂はヘルシーなメニューやデザートなども数多く取り揃えていますし、文系センター16階のスカイラウンジは市内を一望できる展望レストランになっているなど、それぞれの食堂に個性がありますので、キャンパス内での食事に飽きることがありません。さらに、スターバックスコーヒーや牛丼の吉野家、サーティワンアイスクリームなどもありますし、コンビニだってキャンパス内にあります。
+            </div>
+            <!--/container-->
+            <div style="padding-top: 50px;"></div>
+            <img src="./img/facility.webp" alt="" style="width:100%;">
+
+
+            <div style="padding-top: 50px;" id="mono"></div>
+            <div class="title" style="font-weight:700; text-align: left;">ものづくりセンター
+            </div>
+            <div class="main-font" style="text-align: left;padding-top: 25px;">
+                「ものづくりセンター」では、木工、機械工作、電子部品組立等々のものづくりの他、レザークラフトやグッズ製作など趣味のものづくりも可能で、学生の皆さんは施設・設備をいつでも無料で使用できます（材料は持込みまたはものづくりセンターで購入）。
+
+
+            </div>
+            <div style="padding-top: 25px;"></div>
+            <img src="img/guitar.webp" alt="" style="width:100%;">
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="main-font" style="text-align: left;padding-top: 50px;">
+                        また、「ものづくりセンター」ではプログラミングコンテストや3Dモデリング講習、服飾デザイン講座、アクセサリー講座などを開催しています。これらには文系学部などからの参加も多いのが特徴です。さらに、ワンキャンパスで9学部31学科を有する総合大学ならではの幅広い学生同士の交流機会を生かし、文系学部を含む工学部以外の学生ともチームを組んで創作活動を行っています（学生プロジェクト）。
+                        このように、福岡大学工学部の「ものづくりセンター」の特徴は、工学系以外の学生の皆さんとも交流ができるところにあり、学生の皆さんは様々なバックグラウンドを持つ人々の多面的な視点に触れながら、社会で求められるチーム力や豊かな創造力を身に付けていくことができます。
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="./img/pierced.webp" alt="" style="width:100%;padding-top: 50px;">
+                </div>
+
+                <div class="col-md-12">
+
+                    <div style="padding-top: 50px;"></div>
+                    <img src="./img/center.webp" alt="" style="width:100%;">
+                </div>
+            </div>
+            <div style="padding-top: 50px;"></div>
+        </div>
+
+    </div>
+
+
+    <div id="container" style="padding:0px 0px 0px 0px;background-color: white;">
+        <div class="image-container" style="width:100%;">
+
+        </div>
+    </div>
+    <footer style="background-color:#222;">
+        <div class="side-padding">
+            <br>
+            <br>
+            <p>福岡大学工学部</p>
+            <p>
+                〒814-0180　福岡市城南区七隈八丁目19番１号
+                Tel：092-871-6631（代表）
+            </p>
+            <p style="text-align: center;">
+                &copy; 2023 福岡大学工学部</p>
+            <br>
+            <br>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

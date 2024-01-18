@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--   アイコン -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <title>福岡大学工学部</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navi.css">
+    <link rel="stylesheet" type="text/css" href="css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="css/6-6.css">
+
+    <script src="js/menu.js"></script>
+    <script>showMenu("./");</script>
+
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #container {
+            flex-grow: 1;
+        }
+
+        #header {
+            /*headerを全画面で見せる*/
+            width: 100%;
+            height: 30vh;
+            position: relative;
+            ;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div id="menu_box"></div>
+    <nav>
+        <ul>
+            <li style="padding-top: 80px;"><a href="index.html">TOP</a></li>
+            <li><a href="greeting.html">学部長あいさつ</a></li>
+            <li id="faculty">
+                <a href="#" style=" text-decoration: none; /* リンクの下線を削除 */">学科紹介</a>
+                <ul id="faculty-list">
+                    <li>
+                        <a href="tm.html">機械工学科</a>
+                    </li>
+                    <li>
+                        <a href="te.html">電気工学科</a>
+                    </li>
+                    <li>
+                        <a href="tl.html">電子情報工学科</a>
+                    </li>
+                    <li>
+                        <a href="tk.html">化学システム工学科</a>
+                    </li>
+                    <li>
+                        <a href="tc.html">社会デザイン工学科</a>
+                    </li>
+                    <li>
+                        <a href="ta.html">建築学科</a>
+                    </li>
+                    <!-- 他の学科リンクをここに追加してください -->
+                </ul>
+            </li>
+            <li id="teacher">
+                <a href="#" style=" text-decoration: none; /* リンクの下線を削除 */">教員一覧</a>
+                <ul id="teacher-list">
+
+                    <li>
+                        <a href="introduce/introduce-tm.html">機械工学科</a>
+                    </li>
+                    <li>
+                        <a href="introduce/introduce-te.html">電気工学科</a>
+                    </li>
+                    <li>
+                        <a href="introduce/introduce-tl.html">電子情報工学科</a>
+                    </li>
+                    <li>
+                        <a href="introduce/introduce-tk.html">化学システム工学科</a>
+                    </li>
+                    <li>
+                        <a href="introduce/introduce-tc.html">社会デザイン工学科</a>
+                    </li>
+                    <li>
+                        <a href="introduce/introduce-ta.html">建築学科</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="policy.html">教育の特色</a></li>
+            <li><a href="support.html">学生生活サポート体制</a></li>
+            <li><a href="certificate.html">証明書発行申請</a></li>
+            <li><a href="question.html">Q&amp;A</a></li>
+            <li><a href="access.html">ACCESS</a></li>
+        </ul>
+    </nav>
+    <header id="header">
+        <h1 style="   position: fixed;
+        top: 15vh;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        color:#fff;
+        text-shadow: 0 0 15px #666;
+        text-align: center;"><span>福岡大学</span><span>工学部</span> </h1>
+    </header>
+
+
+
+    <div id="container">
+        <div class="side-padding">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div style="padding-top: 50px;"></div>
+                        <div class="title" style="font-weight:700; text-align: left;">
+                            証明書発行申請
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row  pb-5" style="padding-top: 50px;">
+
+                    <div class="col-md-12 col-12">
+                        <div class="ac1">
+                            <dl>
+                                <input id="ac1-1" type="checkbox">
+                                <label for="ac1-1">
+                                    <dt>
+                                        在校生の方
+                                    </dt>
+                                </label>
+                                <dd>
+                                    <div class="accordion-box">
+
+                                        学内に設置している自動証明書発行機で発行してください。<br>
+                                        学生証が必要です。
+
+                                        <img src="assets/images/img1.jpg" alt="">
+                                    </div>
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <input id="ac1-2" type="checkbox">
+                                <label for="ac1-2">
+                                    <dt>
+                                        工学部卒業生の方
+                                    </dt>
+                                </label>
+                                <dd>
+
+
+                                    工学部の卒業生に対する各種証明書の発行についてお知らせします。主な発行証明書は以下のとおりです。<br>
+                                    <div style="padding-top:25px;"></div>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" colspan="2">証明書の種類</th>
+                                                <th scope="col" colspan="4">備考</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" colspan="2">卒業証明書</th>
+                                                <td colspan="4">和文・英文</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" colspan="2">成績証明書<br>(修得した科目の名称と単位数及び評価が記載)</th>
+                                                <td colspan="3">和文・英文</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" colspan="2"> 単位修得証明書(一般)<br>(修得した科目の名称はありません)</th>
+                                                <td colspan="3">分野毎の合計単位数</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" colspan="2"> 単位取得証明書(電検)<br>(電気主任技術者用厳封で発行)</th>
+                                                <td colspan="3">電気工学科卒</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" colspan="2">電気工事士筆記試験免除証明書</th>
+                                                <td colspan="3">電気工学科卒</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" colspan="2">ＪＡＢＥＥ修了証明書</th>
+                                                <td colspan="3">ＪＡＢＥＥコース修了者のみ</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" colspan="2">学力に関する証明書(教職課程)</th>
+                                                <td colspan="3">教務一課(教職担当)へ申請 </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" colspan="2">単位修得証明書(学芸員・社教主事)</th>
+                                                <td colspan="3">教務一課(教職担当)へ申請</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" colspan="2">在籍証明書(※退学者・他)</th>
+                                                <td colspan="3">教務一課(学籍担当)へ申請</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" colspan="2">大学院関係証明書</th>
+                                                <td colspan="3">大学院事務課へ申請</td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+
+
+                                    注）<br>
+                                    ・資格取得に必要な証明書は、試験実施期間又は資格発行機関によく確認のうえお申し込みください。<br>
+                                    ・測量士関係の申請で学籍番号TC05台～TC14台の社会デザイン工学科卒業の方は、<br>　申請目的を記入し
+                                    コース名を明記してください。<br>
+                                    ・建築士受験で学籍番号09台以降の建築学科卒業の方は、
+                                    <a href="http://www.tec.fukuoka-u.ac.jp/arch/app_form/description.html"
+                                        target="_blank" style="color:#8d0000;">建築学科のホームページ</a>
+
+                                    を参照してください。<br>
+                                    ・英文証明書については、卒業年代によっては郵送時間を除き2-3日程度要しますのでご容赦ください。<br>
+                                    ・その他必要な証明書は下記にお問い合わせください。<br><br>
+
+                                    <b>【発行申請方法１】窓口（１１号館１階）に直接来られる場合</b><br><br>
+
+                                    　窓口にある発行機で発行願を購入し、必要事項を記入して身分証明書を提示<br>　⇒窓口で発行<br><br>
+                                    　代理人が来られる場合は、委任状と依頼者本人の身分証明書のコピーを持参し、<br>　窓口にある発行機で発行願を購入、<br>　必要事項を記入して代理人の身分証明書を提示<br>　⇒窓口で発行<br>
+                                    　委任状のダウンロード <a href="download/inin.pdf" target="_blank"
+                                        style="color:#8d0000;">委任状書式（pdfファイル）</a>
+                                    <br><br>
+
+                                    <b>【発行申請方法２】郵送による申し込みの場合</b><br><br>
+
+                                    　1.<a href="download/certify.pdf" target="_blank" download=""
+                                        style="color:#8d0000;">Web証明書発行願.pdf</a>をダウンロードし必要事項を記入<br>
+                                    　（電検、測量士等その他資格の場合は、使用目的の欄にその旨記入のこと）<br>
+                                    　2.手数料（証明書代金分の郵便切手又は定額小為替）<br>
+                                    　3.本人であることを証明できるもの（運転免許証等の写し）<br>
+                                    　4.返信用封筒（宛先記入・切手貼付のもの）<br><br>
+                                    　
+                                    以上1～4を下記に郵送してください。<br><br>
+
+                                    ※なお、電話、メールではお問い合わせには応じますが、発行はお受けしておりません。<br><br>
+
+                                    <div style="padding-top:25px;"></div>
+
+                                    宛先：福岡大学教務三課(工学部事務室)
+                                    <div style="padding-top:10px;"></div>
+                                    <p class="email-container">
+                                        <img src="img/icon/pin.svg" alt=""
+                                            class="email-icon">〒814-0180<br>福岡市城南区七隈八丁目19番１号
+                                    </p>
+                                    <p class="email-container">
+                                        <img src="img/icon/call.svg" alt="" class="email-icon">(代表)092-871-6631(内線)2257
+                                    </p>
+
+                                    <p class="email-container">
+                                        <img src="img/icon/mail.svg" alt=""
+                                            class="email-icon">kogaku@adm.fukuoka-u.ac.jp
+                                    </p>
+
+
+                                </dd>
+                            </dl>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <footer style="background-color:#222;">
+        <div class="side-padding">
+            <br>
+            <br>
+            <p>福岡大学工学部</p>
+            <p>
+                〒814-0180　福岡市城南区七隈八丁目19番１号
+                Tel：092-871-6631（代表）
+            </p>
+            <p style="text-align: center;">
+                &copy; 2023 福岡大学工学部</p>
+            <br>
+            <br>
+        </div>
+    </footer>
+
+
+    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
