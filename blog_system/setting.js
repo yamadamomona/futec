@@ -3,7 +3,7 @@ window.fileToFileTransferVariable = {
   "isLoadSettingSuccess": true,
   "title": "福岡大学工学部",
   "headline": "お知らせ",
-  "headlineBlockId": "block_45a4369c-20d7-43df-ab2f-f6b0b80bc15f",
+  "headlineBlockId": "block_09c7ff60-08f8-4fa0-9b0c-9c22f45ba67e",
   "thumbnailUrl": null,
   "isFullSize": true,
   "isTopbar": true,

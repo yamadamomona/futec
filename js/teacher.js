@@ -17,19 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 link:"https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=1c8e9bf038863f87520e17560c007669&lang=ja",
             });
             break;
-        case "inage":
-            teacherBox.innerHTML = teacher({
-                parent: "introduce-tm.html",
-                name: "稲毛 真一",
-                shikaku: "教授",
-                senmon: "乱流と燃焼のモデル化<br>エネルギー最適化<br>品質工学",
-                color: "white",
-                img: "../img/staff/tm/inage.webp",
-                description: "現在の設計においては、流れの数値計算が不可欠なツールです。その精度は乱流や燃焼のモデル 化に強く依存します。本研究では、基礎的な一様 等方性乱流の理解から始まり、複雑乱流、また燃 焼現象をモデル化し、ガスタービン燃焼器などの 数値計算を高精度に行えるようにするものです。",
-                url: "inage",
-                link:"https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=f8f8e06ed4885988520e17560c007669&lang=ja",
-            });
-            break;
+        
         case "iwamura":
             teacherBox.innerHTML = teacher({
                 parent: "introduce-tm.html",
@@ -287,19 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             break;
 
-        case "sakata":
-            teacherBox.innerHTML = teacher({
-                parent: "introduce-tc.html",
-                name: "坂田 力",
-                shikaku: "准教授",
-                senmon: "構造力学",
-                color: "white",
-                img: "../img/staff/tc/sakata.webp",
-                description: "「なぜだろう？」と疑問に思うことから「学び」が始まります。そして「へぇー、なるほど！」と思ったときに「理解できた」ということです。これからの4年間、多くの「なるほど！」を実感してください。",
-                url: "sakata",
-                link:"https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=897359610acc8ce9520e17560c007669&lang=ja",
-            });
-            break;
+       
         case "shibata":
             teacherBox.innerHTML = teacher({
                 parent: "introduce-tc.html",
@@ -317,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
             teacherBox.innerHTML = teacher({
                 parent: "introduce-tc.html",
                 name: "鈴木 慎也",
-                shikaku: "准教授",
+                shikaku: "教授",
                 senmon: "環境工学<br>廃棄物資源循環工学 ",
                 color: "white",
                 img: "../img/staff/tc/suzuki.webp",
@@ -627,19 +603,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 link:"https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=61bdea5c9073ed9a520e17560c007669&lang=ja",
             });
             break;
-        case "hanai":
-            teacherBox.innerHTML = teacher({
-                parent: "introduce-te.html",
-                name: "花井 正広",
-                shikaku: "教授",
-                senmon: "高電圧工学<br>電気材料",
-                color: "white",
-                img: "../img/staff/te/hanai.webp",
-                description: "雷が風力発電のブレードなどの絶縁物を貫通するメカニズムを電界、熱、圧力の観点で研究しています。また、水を油と同じように絶縁媒体として変圧器等で使用するための研究をしています。",
-                url: "hanai",
-                link:"https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=1ab5538b6283d4ce520e17560c007669&lang=ja",
-            });
-            break;
+
         case "matsuoka":
             teacherBox.innerHTML = teacher({
                 parent: "introduce-te.html",
@@ -679,19 +643,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 link:"https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=0945eb5356728f15520e17560c007669&lang=ja",
             });
             break;
-        case "ohashi":
-            teacherBox.innerHTML = teacher({
-                parent: "introduce-tl.html",
-                name: "大橋 正良",
-                shikaku: "教授",
-                senmon: "ワイヤレスセンサネットワーク<br>IoT<br>移動通信システム",
-                color: "white",
-                img: "../img/staff/tl/ohashi.webp",
-                description: "センサネットワークを活用したIoTシステムの研究開発や、新しい通信方式を用いたレーダ技術の研究を行っています。",
-                url: "ohashi",
-                link:"https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=7ecb23d370ec80ee520e17560c007669&lang=ja",
-            });
-            break;
+    
         case "t_sato":
             teacherBox.innerHTML = teacher({
                 parent: "introduce-tl.html",
