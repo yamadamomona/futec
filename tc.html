@@ -19,8 +19,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/navi.css">
     <link rel="stylesheet" type="text/css" href="css/6-6.css">
+    <link rel="stylesheet" href="css/accordion.css">
 
     <script src="js/menu.js?ver=1"></script>
+    <script src="js/foot.js"></script>
     <script>showMenu("./");</script>
 
     <style>
@@ -182,50 +184,60 @@
                 </div>
                 <div style="padding-top: 25px;"></div>
 
-                <div style="font-size:18px;text-align:left;color:#8d0000;"><b>2020年度から2022年度の主な就職先
+                <div style="font-size:18px;text-align:left;color:#8d0000;"><b>2021年度から2023年度の主な就職先
                     </b></div>
 
                 <div class="container-fluid">
                     <div class="row">
 
 
-
                         <div class="col-12 col-md-12" style="padding-left: 0px;">
                             <div style="padding-top: 15px;"></div>
-                            <div style="text-align: center;background-color: rgba(141,0,0,0.7);color:white;"><b>建設業</b>
+
+                            <div class="ac1">
+                                <dl>
+                                    <input id="ac1-1" type="checkbox" checked>
+                                    <label for="ac1-1">
+                                        <dt>
+                                            2023(令和5)年度の主な就職先
+                                        </dt>
+                                    </label>
+                                    <dd>
+                                        （株）建設技術研究所、（株）長大、パシフィックコンサルタンツ（株）、（株）福山コンサルタント、八千代エンジニヤリング（株）、（株）大林組、鹿島建設（株）、五洋建設（株）、清水建設（株）、大成建設（株）、（株）ＮＩＰＰＯ、（株）パスコ、いであ（株）、国家公務員一般職、東京都庁、福岡県庁、熊本県庁、広島市役所、北九州市役所、福岡市役所など
+
+
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <input id="ac1-2" type="checkbox">
+                                    <label for="ac1-2">
+                                        <dt>
+                                            2022（令和4）年度の主な就職先
+                                        </dt>
+                                    </label>
+                                    <dd>
+                                        五洋建設（株）、大成建設（株）、若築建設（株）、（株）オリエンタルコンサルタンツ、（株）建設技術研究所、（株）長大、日本工営（株）、パシフィックコンサルタンツ（株）、（株）福山コンサルタント、国際航業（株）、西日本高速道路（株）、いであ（株）、国家公務員一般職、福岡県庁、佐賀県庁、長崎県庁、北九州市役所、福岡市役所、久留米市役所、熊本市役所など
+
+
+
+
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <input id="ac1-3" type="checkbox">
+                                    <label for="ac1-3">
+                                        <dt>
+                                            2021（令和3）年度の主な就職先
+                                        </dt>
+                                    </label>
+                                    <dd>
+                                        鹿島建設（株）、三軌建設（株）、東急建設（株）、戸田建設（株）、西松建設（株）、（株）ＮＩＰＰＯ、前田建設工業（株）、（株）九電工、（株）エイト日本技術開発、（株）オオバ、（株）オリエンタルコンサルタンツ、基礎地盤コンサルタンツ（株）、玉野総合コンサルタント（株）、パシフィックコンサルタンツ（株）、国家公務員一般職、熊本県庁、福岡県庁、北九州市役所、久留米市役所、福岡市役所など
+
+
+                                    </dd>
+                                </dl>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 col-6" style="padding-right: 0px;">
-                                    <div style="padding-top: 15px;"></div>
-                                    <h6 style="text-align: left;"><b><span>鹿島建設</span></b></h6>
-                                    <h6 style="text-align: left;"><b><span>大成建設</span></b></h6>
 
-                                    <h6 style="text-align: left;"><b>大林組</b></h6>
-                                    <h6 style="text-align: left;"><b>五洋建設</b></h6>
-                                    <h6 style="text-align: left;"><b>前田建設工業</b></h6>
-
-                                    <h6 style="text-align: left;"><b>若築建設</b></h6>
-
-
-                                </div>
-                                <div class="col-md-6 col-6" style="padding-right: 0px;">
-                                    <div style="padding-top: 15px;"></div>
-
-                                    <h6 style="text-align: left;"><b>日本工営</b></h6>
-                                    <h6 style="text-align: left;"><b><span>パシフィック</span><span>コンサルタンツ</span></b>
-                                    </h6>
-                                    <h6 style="text-align: left;"><b><span>建設技術</span><span>研究所</span></b>
-                                    </h6>
-                                    <h6 style="text-align: left;"><b><span>八千代</span><span>エンジニアリング</span></b>
-                                    </h6>
-
-                                    <h6 style="text-align: left;"><b><span>福山</span><span>コンサルタント</span></b>
-                                    </h6>
-
-
-                                </div>
-
-                            </div>
 
 
 
@@ -235,38 +247,9 @@
 
 
                         </div>
-                        <div class="col-8 col-md-12" style="padding-left: 0px;">
-                            <div style="padding-top: 15px;"></div>
-                            <div style="text-align: center;background-color: rgba(141,0,0,0.7);color:white;"><b>公務</b>
-                            </div>
 
 
-                            <div class="row">
-                                <div class="col-md-6 col-6" style="padding-right: 0px;">
-                                    <div style="padding-top: 15px;"></div>
-                                    <h6 style="text-align: left;"><b><span>国家公務員</span><span>一般職</span></b></h6>
-                                    <h6 style="text-align: left;"><b>山口県庁</b></h6>
-
-                                    <h6 style="text-align: left;"><b>福岡県庁</b></h6>
-                                    <h6 style="text-align: left;"><b>佐賀県庁</b></h6>
-                                    <h6 style="text-align: left;"><b>長崎県庁</b></h6>
-                                </div>
-                                <div class="col-md-6 col-6" style="padding-right: 0px;">
-                                    <div style="padding-top: 15px;"></div>
-                                    <h6 style="text-align: left;"><b>大分県庁</b></h6>
-                                    <h6 style="text-align: left;"><b>福岡市役所</b></h6>
-                                    <h6 style="text-align: left;"><b>北九州市役所</b></h6>
-                                    <h6 style="text-align: left;"><b>熊本市役所</b></h6>
-                                </div>
-                            </div>
-
-
-
-
-
-
-                        </div>
-
+            
 
                     </div>
                     <div style="padding-top: 50px;"></div>
@@ -391,21 +374,7 @@
             </div>
         </div>
     </div>
-    <footer style="background-color:#222;">
-        <div class="side-padding">
-            <br>
-            <br>
-            <p>福岡大学工学部</p>
-            <p>
-                〒814-0180　福岡市城南区七隈八丁目19番１号
-                Tel：092-871-6631（代表）
-            </p>
-            <p style="text-align: center;">
-                &copy; 2023 福岡大学工学部</p>
-            <br>
-            <br>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
 
 

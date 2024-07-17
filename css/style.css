@@ -4,6 +4,17 @@
   font-family: 'Noto Sans JP', sans-serif !important;
   font-weight: 100;
 }
+.fixed-text {
+  position: fixed;
+  left: 80%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  white-space: nowrap;  /* ここでテキストの改行を防ぎます */
+}
 
 span {
   display: inline-block;
@@ -311,7 +322,10 @@ a {
 }
 
 @media (max-width: 767px) {
- 
+ .fixed-text{
+  left:55%;
+  top:90%;
+ }
   .pc-img {
     display: none;
   }
@@ -494,3 +508,10 @@ dd {
   height: 30px; /* アイコンの高さ */
   margin-right: 8px; /* アイコンとテキストの間隔 */
 }
+
+ .link {
+            position: relative;
+            color: blue; /* 好みの色に変更可能 */
+        }
+
+    

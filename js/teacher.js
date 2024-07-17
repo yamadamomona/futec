@@ -265,12 +265,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 parent: "introduce-tc.html",
                 name: "木下 幸治",
                 shikaku: "教授",
-                senmon: "",
+                senmon: "構造工学<br>耐震工学<br>破壊力学",
                 color: "",
                 img: "../img/staff/tc/kinoshita.webp",
-                description: "",
+                description: "「地球上のみならず宇宙空間も想定した先端的，または将来に渡って使用可能な持続的な構造等に関する研究や社会インフラの環境負荷低減を可能とするエコ・リニューアル工法に関する研究を行っています。」",
                 url: "kinoshita",
-                link: "",
+                link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=74a78e2936af318a520e17560c007669&lang=ja",
             });
             break;
 
@@ -577,6 +577,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=e561ab97ce6201df520e17560c007669&lang=ja",
             });
             break;
+
+            case "takamura":
+                teacherBox.innerHTML = teacher({
+                    parent: "introduce-te.html",
+                    name: "高村 紀充",
+                    shikaku: "准教授",
+                    senmon: "高電圧工学<br>誘電・絶縁材料<br>放電・プラズマ・パルスパワー",
+                    color: "white",
+                    img: "../img/staff/te/takamura.webp",
+                    description: "電気機器に使用される固体・液体の絶縁材料の特性向上に関する研究や、雷が絶縁物を貫通するメカニズムと対策に関する研究を行っています。また、放電・プラズマ・パルスパワーに関する研究を行った実績もあります。",
+                    url: "takamura",
+                    link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=bca4d1c59081328c520e17560c007669&lang=ja",
+                });
+                break;
+
         case "tsuji":
             teacherBox.innerHTML = teacher({
                 parent: "introduce-te.html",

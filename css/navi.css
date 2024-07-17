@@ -1,7 +1,7 @@
 nav {
     background-color: #222222;
     /* ナビゲーションバーの幅 */
-    width: 70%;
+    width: 50%;
     /* 画面いっぱいに表示する */
     height: 100%;
     position: fixed;
@@ -133,11 +133,15 @@ nav ul li button:hover {
     .mobile-square {
         display: none;
     }
+ 
 }
 
 @media (max-width: 767px) {
     .pc-square {
         display: none;
+    }
+    nav{
+        width: 70%;
     }
 }
 

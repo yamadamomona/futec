@@ -25,11 +25,13 @@
     <!--  -->
     <!-- 「お知らせ」のプログラムを読み込む -->
     <script src="./blog_system/blog.js?ver=1"></script>
+    <script src="js/foot.js"></script>
     <script>
         blog("./blog_system/"); // 「お知らせ」を表示する。
     </script>
     <!--  -->
-    
+   
+
 </head>
 
 <body>
@@ -46,6 +48,9 @@
             <span>工学部</span>
         </h1>
     </header>
+  
+    <div class="fixed-text">卒業生の証明書発行依頼は  <a href="certificate.html" class="link">こちら↗</a>
+    </div>
     <div id="container" style="background-color: #fafafa;">
         <div class="side-padding">
             <div style="padding-top:50px;"></div>
@@ -274,7 +279,7 @@
                     <div class="col-md-12" style="padding-left: 0;">
                         <div class="title" style="font-weight:700; text-align: left;">
                             <span>全国規模の</span><span>大企業</span><span>から</span><span>地元の</span><span>企業</span><span>まで</span><span>幅広く</span><span>就職</span><span>(就職率
-                                98.7%)</span>
+                                99.1%)</span>
                         </div>
 
                         <div style="padding-top: 50px;"></div>
@@ -292,7 +297,7 @@
                         <ul class="flow">
                             <li>
                                 <dl>
-                                    <dd>福岡大学卒業生約２８万人、うち工学部卒業生約３万７千人
+                                    <dd>福岡大学卒業生約29万人、うち工学部卒業生約3万8千人
                                     </dd>
                                 </dl>
                             </li>
@@ -316,16 +321,15 @@
 
                     </div>
                     <div style="padding-top: 100px;"></div>
-
                     <div class="col-md-12"
                         style="padding-left: 0;padding-right: 0;text-align: left;background-color: #fafafa;">
-                        <h3>各学科の主な就職先</h3>
+                        <h3>2021年度から2023年度の各学科の主な就職先(順不同)</h3>
                     </div>
                     <div style="padding-top: 15px;"></div>
                     <div class="col-md-4 col-6" style="padding-left: 0;padding-right: 0;padding-top: 15px;">
                         <a href="tm.html#course_tm" style="font-size: 1rem;color: #8d0000;  transition: none;
                     ">→機械工学科</a>
-                    
+
                     </div>
                     <div class="col-md-4 col-6" style="padding-top: 15px;padding-left: 0;padding-right: 0;">
                         <a href="te.html#course_te" style="font-size: 1rem;color: #8d0000;" id="course">→電気工学科</a>
@@ -374,21 +378,8 @@
 
         </div>
     </div>
-    <footer style="background-color:#222;">
-        <div class="side-padding">
-            <br>
-            <br>
-            <p>福岡大学工学部</p>
-            <p>
-                〒814-0180　福岡市城南区七隈八丁目19番１号
-                Tel：092-871-6631（代表）
-            </p>
-            <p style="text-align: center;">
-                &copy; 2023 福岡大学工学部</p>
-            <br>
-            <br>
-        </div>
-    </footer>
+    <div id="footer"></div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
