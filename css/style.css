@@ -7,14 +7,39 @@
 .fixed-text {
   position: fixed;
   left: 80%;
-  top: 80%;
+  top: 85%;
   transform: translate(-50%, -50%);
   background-color: #f0f0f0;
   padding: 10px 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   white-space: nowrap;  /* ここでテキストの改行を防ぎます */
+  width:330px;
+  text-align: left;
 }
+
+.fixed-text2 {
+  position: fixed;
+  left: 80%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  width:330px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  white-space: nowrap;  /* ここでテキストの改行を防ぎます */
+  text-align: left;
+}
+
+
+
+
+.youtube-ratio iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
 
 span {
   display: inline-block;
@@ -326,9 +351,14 @@ a {
   left:55%;
   top:90%;
  }
+ .fixed-text2{
+  left:55%;
+  top:80%;
+ }
   .pc-img {
     display: none;
   }
+
 }
 
 
