@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--   アイコン -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <title>福岡大学工学部</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navi.css">
+    <link rel="stylesheet" type="text/css" href="css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="css/6-6.css">
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #container {
+            flex-grow: 1;
+        }
+
+
+        #header {
+            /*headerを全画面で見せる*/
+            width: 100%;
+            height: 30vh;
+            position: relative;
+            ;
+        }
+
+        /* タブの文字サイズ調整 */
+        .nav-tabs .nav-link {
+            font-size: 13px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* PCの場合: タブを横6学科並べる */
+        .nav-tabs {
+            display: flex;
+            flex-wrap: nowrap;
+            /* 1行にすべて並べる */
+            justify-content: space-evenly;
+            /* 均等に配置 */
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .nav-tabs .nav-item {
+
+            text-align: center;
+            /* 中央寄せ */
+        }
+
+        /* スマホの場合: タブを横2学科、縦3段に並べる */
+        @media (max-width: 768px) {
+            .nav-tabs {
+                display: flex;
+                flex-wrap: wrap;
+                /* 横に2学科、縦に折り返す */
+                justify-content: space-between;
+                /* 均等に配置 */
+            }
+
+            .nav-tabs .nav-item {
+                flex: 0 0 48%;
+                /* 最小幅を48%にして、2つ並ぶようにする */
+                margin-bottom: 10px;
+                /* タブ間にスペースを追加 */
+            }
+
+            .nav-tabs .nav-link {
+                text-align: center;
+                /* タブ内のテキストを中央に */
+                font-size: 14px;
+                /* スマホ向けに文字サイズ調整 */
+                width: 100%;
+                /* タブの幅を100%にして親要素にフィットさせる */
+            }
+        }
+
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .spec-table th,
+        .spec-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* モバイル対応 */
+        @media (max-width: 768px) {
+
+            .spec-table,
+            .spec-table tbody,
+            .spec-table tr,
+            .spec-table th,
+            .spec-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .spec-table tr {
+                margin-bottom: 1.5em;
+                border-bottom: 2px solid #999;
+            }
+
+            .spec-table th {
+                background: #f0f0f0;
+                font-weight: bold;
+                border: none;
+                padding: 8px 10px;
+            }
+
+            .spec-table td {
+                border: none;
+                padding: 6px 10px;
+                border-top: 1px solid #ddd;
+            }
+        }
+
+        .contact-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid #007bff;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-family: sans-serif;
+        }
+
+        .contact-box h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            color: #333;
+        }
+
+        .contact-box ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .contact-box li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: #444;
+            line-height: 1.4;
+            word-break: break-word;
+            /* 長いメールアドレス対策 */
+        }
+
+        /* PC向け少し大きめ */
+        @media (min-width: 768px) {
+            .contact-box h2 {
+                font-size: 1.4rem;
+            }
+
+            .contact-box li {
+                font-size: 1rem;
+            }
+        }
+
+
+        .tab-pane {
+            padding-top: 0 !important;
+            margin-top: 0 !important;
+            min-height: 0 !important;
+            height: auto !important;
+        }
+
+        @media (max-width: 768px) {
+            .tab-pane {
+                padding-top: 0 !important;
+                margin-top: 0 !important;
+                min-height: 0 !important;
+            }
+        }
+
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.card-link {
+  text-decoration: none;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card {
+  background-color: #f9fbfe;
+  border: 1px solid #d0e3f2;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: #003366;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card h4 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.card-link-text {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  transition: color 0.2s;
+}
+
+.card-link-text:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+
+    </style>
+
+    <script src="js/menu.js?ver=1"></script>
+    <script src="js/foot.js"></script>
+    <script>showMenu("./");</script>
+
+</head>
+
+
+<body>
+    <div id="menu_box"></div>
+    <header id="header">
+        <h1 style="   position: fixed;
+        top: 15vh;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        color:#fff;
+        text-shadow: 0 0 15px #666;
+        text-align: center;"><span>福岡大学</span><span>工学部</span> </h1>
+    </header>
+
+
+
+    <div id="container" style="background-color: #fafafa;">
+        <div class="side-padding">
+            <div style="padding-top:50px;"></div>
+
+
+
+            <div class="title" style="font-weight:700; text-align: left;">BYOD関連 情報サイト
+            </div>
+            <div style="padding-top:50px;"></div>
+
+            <h4 style="text-align:left;color: #8d0000;"><b>【全学科共通】ノートパソコンの準備について</b></h4>
+            <div class="main-font" style="letter-spacing: 0.1em;line-height: 1.5;padding-top: 20px; ">
+                福岡大学ではBYOD（Bring Your Own Device）を推進しており、全学部生が一人一台のノートパソコンを所有し、授業など日常で活用されることを目指しています。<br>
+                工学部においても、講義・演習やレポート・プレゼンテーション作成等に個人所有のノートパソコンを活用しますので各自準備してください。<br>
+                各学科で推奨スペックが異なりますので、下記のリンクからご自身の学科を選んでご確認ください。
+
+            </div>
+
+
+
+
+
+
+
+            <div style="padding-top:50px;"></div>
+
+            <div class="department-links">
+
+              <div class="department-links">
+                <h5 style="color: #8d0000;">▼ 学科別 推奨スペックはこちらから</h5>
+                <div style="padding-top:10px;"></div>
+                <div class="card-container">
+                  <a href="mech.pdf" class="card-link">
+                    <div class="card">
+                      <h4>機械工学科</h4>
+                      <p class="card-link-text">推奨ノートパソコンスペック（PDF）</p>
+                    </div>
+                  </a>
+                  <a href="elec.pdf" class="card-link">
+                    <div class="card">
+                      <h4>電気工学科</h4>
+                      <p class="card-link-text">推奨ノートパソコンスペック（PDF）</p>
+                    </div>
+                  </a>
+                  <a href="info.pdf" class="card-link">
+                    <div class="card">
+                      <h4>電子情報工学科</h4>
+                      <p class="card-link-text">推奨ノートパソコンスペック（PDF）</p>
+                    </div>
+                  </a>
+                  <a href="chem.pdf" class="card-link">
+                    <div class="card">
+                      <h4>化学システム工学科</h4>
+                      <p class="card-link-text">推奨ノートパソコンスペック（PDF）</p>
+                    </div>
+                  </a>
+                  <a href="soc.pdf" class="card-link">
+                    <div class="card">
+                      <h4>社会デザイン工学科</h4>
+                      <p class="card-link-text">推奨ノートパソコンスペック（PDF）</p>
+                    </div>
+                  </a>
+
+                  <a href="soc.pdf" class="card-link">
+                    <div class="card">
+                      <h4>建築学科</h4>
+                      <p class="card-link-text">推奨ノートパソコンスペック（PDF）</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              
+              
+            
+        </div>
+
+
+
+        <div style="padding-top:50px;"></div>
+    </div>
+
+
+
+    </div>
+
+    <div id="footer"></div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

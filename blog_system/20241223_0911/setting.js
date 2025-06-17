@@ -1,9 +1,9 @@
 window.fileToFileTransferVariable = {
-  "date": "2024-07-19",
+  "date": "2024-12-23",
   "isLoadSettingSuccess": true,
   "title": "福岡大学工学部",
-  "headline": "8月3日と4日にオープンキャンパスを開催します<div>［工学部は4日（日）］</div>",
-  "headlineBlockId": "block_20f5b926-089a-45e4-915b-778369862bfb",
+  "headline": "年末年始の窓口事務の取扱いについてお知らせ",
+  "headlineBlockId": "block_76669311-af91-4eef-af0a-e57aec20de9f",
   "thumbnailUrl": null,
   "isFullSize": true,
   "isTopbar": true,

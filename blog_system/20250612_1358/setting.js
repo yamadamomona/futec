@@ -1,9 +1,9 @@
 window.fileToFileTransferVariable = {
-  "date": "2024-07-19",
+  "date": "2025-06-13",
   "isLoadSettingSuccess": true,
   "title": "福岡大学工学部",
-  "headline": "8月3日と4日にオープンキャンパスを開催します<div>［工学部は4日（日）］</div>",
-  "headlineBlockId": "block_20f5b926-089a-45e4-915b-778369862bfb",
+  "headline": "★海外短期研修募集のご案内★<div>&nbsp;第２回「持続可能でカーボンニュートラルな社会の実現を目指すエンジニア」\n</div>",
+  "headlineBlockId": "block_c3bbcf58-088b-4d79-998d-d21ea012dc1d",
   "thumbnailUrl": null,
   "isFullSize": true,
   "isTopbar": true,
@@ -45,6 +45,10 @@ window.fileToFileTransferVariable = {
     },
     {
       "blockType": "Padding",
+      "children": []
+    },
+    {
+      "blockType": "LinkButton",
       "children": []
     }
   ],

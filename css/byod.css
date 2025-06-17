@@ -1,0 +1,168 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    flex-grow: 1;
+}
+
+
+#header {
+    /*headerを全画面で見せる*/
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    ;
+}
+
+/* タブの文字サイズ調整 */
+.nav-tabs .nav-link {
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* PCの場合: タブを横6学科並べる */
+.nav-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    /* 1行にすべて並べる */
+    justify-content: space-evenly;
+    /* 均等に配置 */
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-tabs .nav-item {
+
+    text-align: center;
+    /* 中央寄せ */
+}
+
+/* スマホの場合: タブを横2学科、縦3段に並べる */
+@media (max-width: 768px) {
+    .nav-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        /* 横に2学科、縦に折り返す */
+        justify-content: space-between;
+        /* 均等に配置 */
+    }
+
+    .nav-tabs .nav-item {
+        flex: 0 0 48%;
+        /* 最小幅を48%にして、2つ並ぶようにする */
+        margin-bottom: 10px;
+        /* タブ間にスペースを追加 */
+    }
+
+    .nav-tabs .nav-link {
+        text-align: center;
+        /* タブ内のテキストを中央に */
+        font-size: 14px;
+        /* スマホ向けに文字サイズ調整 */
+        width: 100%;
+        /* タブの幅を100%にして親要素にフィットさせる */
+    }
+}
+
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.spec-table th,
+.spec-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+
+    .spec-table,
+    .spec-table tbody,
+    .spec-table tr,
+    .spec-table th,
+    .spec-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .spec-table tr {
+        margin-bottom: 1.5em;
+        border-bottom: 2px solid #999;
+    }
+
+    .spec-table th {
+        background: #f0f0f0;
+        font-weight: bold;
+        border: none;
+        padding: 8px 10px;
+    }
+
+    .spec-table td {
+        border: none;
+        padding: 6px 10px;
+        border-top: 1px solid #ddd;
+    }
+}
+
+.contact-box {
+    background-color: #f9f9f9;
+    border-left: 4px solid #007bff;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    font-family: sans-serif;
+}
+
+.contact-box h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+.contact-box ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.contact-box li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+    word-break: break-word;
+    /* 長いメールアドレス対策 */
+}
+
+/* PC向け少し大きめ */
+@media (min-width: 768px) {
+    .contact-box h2 {
+        font-size: 1.4rem;
+    }
+
+    .contact-box li {
+        font-size: 1rem;
+    }
+}
+
+
+.tab-pane {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+}
+
+@media (max-width: 768px) {
+    .tab-pane {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+        min-height: 0 !important;
+    }
+}

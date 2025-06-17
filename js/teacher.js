@@ -97,6 +97,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=ff0f3aaf945cd00e520e17560c007669&lang=ja",
             });
             break;
+
+
+        case "yamada":
+            teacherBox.innerHTML = teacher({
+                parent: "introduce-tm.html",
+                name: "山田 和豊",
+                shikaku: "教授",
+                senmon: "流体工学<br>ターボ機械<br>数値流体力学",
+                color: "white",
+                img: "../img/staff/tm/yamada.webp",
+                description: "流体機械の代表格であるターボ機械は実に多くの基幹産業を支えています。近年のエネルギー環境問題を背景に，ターボ機械の高性能化や，更には革新的なターボ機械の創出に向けた研究に取り組んでいます。",
+                url: "yamada",
+                link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=302ab923cc93385d520e17560c007669&lang=ja",
+            });
+            break;
+
         case "yamabe":
             teacherBox.innerHTML = teacher({
                 parent: "introduce-tm.html",
@@ -165,6 +181,21 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             break;
 
+        case "m_suzuki":
+            teacherBox.innerHTML = teacher({
+                parent: "introduce-ta.html",
+                name: "鈴木 光雄",
+                shikaku: "教授",
+                senmon: "建築構造設計<br>耐震構造<br>地震応答最適化",
+                color: "white",
+                img: "../img/staff/ta/suzuki.webp",
+                description: "建築構造における最適な計画とは何かを明らかにし、それを効率的に導き出すための手法を探求します。建築設計は多分野が連携する総合的なプロセスであり、特に構造設計は初期段階での計画方針が全体の品質を大きく左右します。実務経験を踏まえ、性能・合理性・施工性といった観点を複合的に評価しながら、構造計画の選択肢を広げ、最適な案を導出する方法論を追究します。加えて、耐震性向上、地震応答最適化にも取り組んでいきます。",
+                url: "m_suzuki",
+                link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=81df3ce5070dbe3e520e17560c007669&lang=ja",
+            });
+
+            break;
+
         case "sakai":
             teacherBox.innerHTML = teacher({
                 parent: "introduce-ta.html",
@@ -179,6 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             break;
+
         case "takayama":
             teacherBox.innerHTML = teacher({
                 parent: "introduce-ta.html",
@@ -268,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 senmon: "構造工学<br>耐震工学<br>破壊力学",
                 color: "",
                 img: "../img/staff/tc/kinoshita.webp",
-                description: "「地球上のみならず宇宙空間も想定した先端的，または将来に渡って使用可能な持続的な構造等に関する研究や社会インフラの環境負荷低減を可能とするエコ・リニューアル工法に関する研究を行っています。」",
+                description: "地球上のみならず宇宙空間も想定した先端的，または将来に渡って使用可能な持続的な構造等に関する研究や社会インフラの環境負荷低減を可能とするエコ・リニューアル工法に関する研究を行っています。",
                 url: "kinoshita",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=74a78e2936af318a520e17560c007669&lang=ja",
             });
@@ -282,7 +314,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 senmon: "地盤工学<br>舗装工学<br>地盤環境工学",
                 color: "white",
                 img: "../img/staff/tc/k_sato.webp",
-                description: "大学の4年間は「よく遊び、よく学び」ましょう。福岡大学は全国でも珍しいワンキャンパスです。多くの学部学科の学生たちと交流ができます。夢を持った皆さんの入学をお待ちしております。",
+                description: "さまざまな構造物を支える地盤と舗装について研究をしています。様々な産業廃棄物などの地盤材料への利活用、液状化防止対策技術の開発、竹を用いた地盤改良技術による炭素固定技術の開発、竹チップ舗装技術の開発、ジオシンセティックを用いた舗装の長寿命化に関する研究を進めています。",
                 url: "k_sato",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/search?typeSearch=mFreeword&keyword=%E4%BD%90%E8%97%A4+%E7%A0%94%E4%B8%80&lang=ja&type=Name",
             });
@@ -297,7 +329,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 senmon: "景観デザイン<br>まちづくり",
                 color: "white",
                 img: "../img/staff/tc/shibata.webp",
-                description: "魅力的なまちは多くの魅力的な社会基盤施設や公共空間によって形づくられています。美しい「景観づくり」、快適な暮らしを育む「まちづくり」について学んでみませんか。",
+                description: "美しく快適なまちを創出するため、魅力的な景観の形成、公共空間・施設のデザイン、また災害に強く、多世代にわたる安全安心な暮らしを育む「まちづくり」の方法について、コミュニティ・デザインや歴史的なアプローチも駆使しながら、研究および具体的な設計・計画等の実践活動に取り組んでいます。",
                 url: "shibata",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=ad51a28a4666694c520e17560c007669&lang=ja",
             });
@@ -310,7 +342,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 senmon: "環境工学<br>廃棄物資源循環工学 ",
                 color: "white",
                 img: "../img/staff/tc/suzuki.webp",
-                description: "デザインとは、具体的な問題を解き明かすための思考・概念を組み立て、それを表現する行為です。私たちのデザインの対象は、この日常社会そのものです。お待ちしています。",
+                description: "地球環境に配慮した生活空間を実現するため、リデュース・リユース・リサイクル（3R）と廃棄物の適正処理・処分に関する研究を行っています。「ウェルビーイング／高い生活の質」を念頭に、若年層にも高齢層にやさしく心身ともに健康増進につながる社会の構築を目指しています。",
                 url: "s_suzuki",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=5d52e05ec0fcd2c9520e17560c007669&lang=ja",
             });
@@ -323,7 +355,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 senmon: "交通計画<br>都市計画",
                 color: "white",
                 img: "../img/staff/tc/tatsumi.webp",
-                description: "本学科では、安全で快適なまちづくりを実現するための人材を養成します。私たちの暮らす街をより良くしたい人や社会に貢献したい人は本学科を選んでみてはいかがでしょうか。",
+                description: "人と地球にやさしく、安全で快適な移動環境を実現するために、自動車や公共交通、自転車、次世代モビリティなどの交通システムについて研究しています。また、歩いて楽しい都市空間や活力のあるまちづくりに関する研究にも取り組んでいます。",
                 url: "tatsumi",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=b8b917cc6d9c1dba520e17560c007669&lang=ja",
             });
@@ -336,7 +368,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 senmon: "水工学<br>環境水理学",
                 color: "white",
                 img: "../img/staff/tc/hashimoto.webp",
-                description: "将来の自分をイメージしてみてください。そして、「市民の文明的な暮らしのために、人間らしい環境を整えていく仕事(Civil Engineering)」に興味を持ったなら、本学科を調べてみてください。",
+                description: "将来の気候変動による影響を踏まえ、最新の気象予測データやAI技術を活用して、河川水位や洪水リスクの予測、市街地や地下空間の浸水対策、河川氾濫時の被害軽減策について研究しています。また、温暖化が水環境に及ぼす影響についても、現地調査を通じた研究を進めています。",
                 url: "hashimoto",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=7d84bb2277b0ed71520e17560c007669&lang=ja",
             });
@@ -349,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 senmon: "コンクリート工学<br>維持管理工学",
                 color: "white",
                 img: "../img/staff/tc/hazehara.webp",
-                description: "ダム、橋、トンネルを建設して、そして次の世代に残していく、そんなものづくりの楽しさを知ることができるのも本学科の魅力です。自然環境と社会環境を融合して、より良い未来を一緒に創っていきましょう。",
+                description: "長寿命で地球環境にやさしい次世代のコンクリートを誕生させるために，「高耐久で施工性に優れたカーボンニュートラルコンクリートの開発」，「低炭素化と省力化を可能とするプレキャストコンクリートの開発」に関する行っています。",
                 url: "hazehara",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=70d3428d5acb861f520e17560c007669&lang=ja",
             });
@@ -362,7 +394,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 senmon: "地盤工学<br>地盤防災工学<br>地盤情報工学",
                 color: "white",
                 img: "../img/staff/tc/murakami.webp",
-                description: "地震や豪雨による地盤に関わる多くの災害。今後、激甚化するといわれています。私たちの暮らしを守る技術について、学び、考え、そして、未来のための新しい技術を一緒に研究しましょう。",
+                description: "豪雨時の土砂災害、地震時の液状化災害など、気候変動の影響も加わり、ますます激甚化するであろう地盤災害の防止・軽減のために、従来の地盤工学をベースにし、最新のAI・ICT・ビッグデータを活用した新しいレジリエント防災技術の開発と社会実装について研究しています。",
                 url: "murakami",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=509b7dbbe31d6af2520e17560c007669&lang=ja",
             });
@@ -375,7 +407,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 senmon: "応用生態工学<br>河川工学<br>上下水道学",
                 color: "white",
                 img: "../img/staff/tc/r_watanabe.webp",
-                description: "大変な時期で、皆さんも戸惑っていると思いますが、この時間を大切に使いましょう。読書をお勧めします。どんなジャンルの本でも良いので、1日に1時間、活字を読んでみましょう。",
+                description: "グリーンインフラの社会実装を都市域で実現する研究と、劣化した干潟環境の再生を試みる研究を行っています。この研究が都市域及び干潟で実現していくことで、国土交通省が掲げるネイチャーポジティブを達成することになり、災害に強い街と、生物多様性を保全していくことが可能となります。",
                 url: "r_watanabe",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=d6d20d71caf03522520e17560c007669&lang=ja",
             });
@@ -388,7 +420,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 senmon: "橋梁工学<br>木材利用<br>災害対応",
                 color: "white",
                 img: "../img/staff/tc/h_watanabe.webp",
-                description: "最近も頻発する災害を止めることはできなく ても、ダメージを和らげることはあなたにもできると思います。私たちと一緒に取り組んでみませんか。",
+                description: "SDGsの達成のために、鋼やコンクリートだけでなく、木材を使って私たちの暮らしを豊かにしていく方法を研究しています。木材は利用する上で十分な性能があり資源が国内に豊富に蓄積されており、地球上で炭素固定という重要な役割を演じています。実際に使ってく上での課題を解決します。",
                 url: "h_watanabe",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=a99bea22eb349118520e17560c007669&lang=ja",
             });
@@ -578,19 +610,19 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             break;
 
-            case "takamura":
-                teacherBox.innerHTML = teacher({
-                    parent: "introduce-te.html",
-                    name: "高村 紀充",
-                    shikaku: "准教授",
-                    senmon: "高電圧工学<br>誘電・絶縁材料<br>放電・プラズマ・パルスパワー",
-                    color: "white",
-                    img: "../img/staff/te/takamura.webp",
-                    description: "電気機器に使用される固体・液体の絶縁材料の特性向上に関する研究や、雷が絶縁物を貫通するメカニズムと対策に関する研究を行っています。また、放電・プラズマ・パルスパワーに関する研究を行った実績もあります。",
-                    url: "takamura",
-                    link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=bca4d1c59081328c520e17560c007669&lang=ja",
-                });
-                break;
+        case "takamura":
+            teacherBox.innerHTML = teacher({
+                parent: "introduce-te.html",
+                name: "高村 紀充",
+                shikaku: "准教授",
+                senmon: "高電圧工学<br>誘電・絶縁材料<br>放電・プラズマ・パルスパワー",
+                color: "white",
+                img: "../img/staff/te/takamura.webp",
+                description: "電気機器に使用される固体・液体の絶縁材料の特性向上に関する研究や、雷が絶縁物を貫通するメカニズムと対策に関する研究を行っています。また、放電・プラズマ・パルスパワーに関する研究を行った実績もあります。",
+                url: "takamura",
+                link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=bca4d1c59081328c520e17560c007669&lang=ja",
+            });
+            break;
 
         case "tsuji":
             teacherBox.innerHTML = teacher({
@@ -672,6 +704,19 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             break;
 
+        case "ototake":
+            teacherBox.innerHTML = teacher({
+                parent: "introduce-tl.html",
+                name: "乙武 北斗",
+                shikaku: "准教授",
+                senmon: "自然言語処理<br>人工知能",
+                color: "white",
+                img: "../img/staff/tl/ototake.webp",
+                description: "ことばを扱う人工知能、自然言語処理の研究を行っています。特に政治や行政に関連するデータの収集、整理、解析に基づくアプリケーションの研究に取り組んでいます。",
+                url: "ototake",
+                link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=8c6528b51547ca80520e17560c007669&lang=ja",
+            });
+            break;
         case "t_sato":
             teacherBox.innerHTML = teacher({
                 parent: "introduce-tl.html",
@@ -683,6 +728,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 description: "汎用品から専用品までさまざまなコンピュータやプロセッサの実現方式を研究しています。近年はAIやIoT向けの省エネルギ技術に注力して取り組んでいます。",
                 url: "t_sato",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=1da63125fd3b2772520e17560c007669&lang=ja",
+            });
+            break;
+
+
+        case "misumi":
+            teacherBox.innerHTML = teacher({
+                parent: "introduce-tl.html",
+                name: "三角 真",
+                shikaku: "准教授",
+                senmon: "情報通信ネットワーク<br>IoTシステム<br>自律分散型ネットワーク",
+                color: "white",
+                img: "../img/staff/tl/misumi.webp",
+                description: "IoTシステム、情報通信ネットワーク、自律分散ネットワークの研究に取り組み、より良い社会の実現を目指しています。",
+                url: "misumi",
+                link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=11a97e66d7715115520e17560c007669&lang=ja",
             });
             break;
         case "suetsugu":
@@ -837,7 +897,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function teacher({ parent, name, shikaku, senmon, color, img, description, url, link }) {
     if (!parent || !name || !shikaku || !senmon || !color || !img || !description || !url) {
-      /*   alert("引数が設定されていません"); */
+        /*   alert("引数が設定されていません"); */
     }
     return `
         <div class="col-md-12 col-sm-12"  >

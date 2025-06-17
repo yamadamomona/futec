@@ -3,7 +3,7 @@ window.fileToFileTransferVariable = {
   "isLoadSettingSuccess": true,
   "title": "福岡大学工学部",
   "headline": "お知らせ",
-  "headlineBlockId": "block_09c7ff60-08f8-4fa0-9b0c-9c22f45ba67e",
+  "headlineBlockId": "block_64daedda-2b49-4661-836f-1ea710f08c9c",
   "thumbnailUrl": null,
   "isFullSize": true,
   "isTopbar": true,
@@ -45,7 +45,6 @@ window.fileToFileTransferVariable = {
   "mapUrl": "https://maps.app.goo.gl/dMCdozde4hixtFyH6",
   "address": "〒814-0180　福岡市城南区七隈八丁目19番１号",
   "childPages": {
-  
     "20231108_1535": {
       "headline": "夏季休業に伴う窓口事務の取扱について",
       "overview": " ８月４日（金）から９月１３日（水）までは夏季休暇期間（学年暦上）となりますが、（昼間部後期授業開始",
@@ -97,18 +96,29 @@ window.fileToFileTransferVariable = {
       "overview": " 8月3日（土）から9月15日（日）までは夏季休暇期間となります。 （昼間部後期授業開始は9月16日",
       "date": "2024-07-19"
     },
-    "20240724_1111": {
-      "thumbnailUrl": null,
-      "headline": "★海外短期研修の説明会のご案内★「持続可能でカーボンニュートラルな社会の実現を目指すエンジニア」",
-      "overview": " ★海外短期研修の説明会のご案内★ 「持続可能でカーボンニュートラルな社会の実現を目指すエンジニア」",
-      "date": "2024-07-24"
-    },
-
     "20240808_1526": {
       "thumbnailUrl": null,
       "headline": "オープンキャンパス2024を開催しました(8/4)、工学部説明会の動画をアップしました",
       "overview": " 福岡大学工学部では8月4日（日曜日）にオープンキャンパス2024を開催しました。 当日は猛暑にもか",
       "date": "2024-08-09"
+    },
+    "20241223_0911": {
+      "thumbnailUrl": null,
+      "headline": "年末年始の窓口事務の取扱いについてお知らせ",
+      "overview": " 令和 6 年 12 月 28 日（土）から令和 7 年 1 月 5 日(日)まで窓口事務は冬季休業",
+      "date": "2024-12-23"
+    },
+    "20250612_1333": {
+      "thumbnailUrl": null,
+      "headline": "令和7年度について父母懇談会について",
+      "overview": " 福岡大学工学部です。 福岡大学工学部では、6月21日（土）に本学会場のA棟にて父母懇談会を開催しま",
+      "date": "2025-06-12"
+    },
+    "20250612_1358": {
+      "thumbnailUrl": null,
+      "headline": "★海外短期研修募集のご案内★\n第２回「持続可能でカーボンニュートラルな社会の実現を目指すエンジニア」\n",
+      "overview": " ★海外短期研修募集のご案内★ 第２回「持続可能でカーボンニュートラルな社会の実現を目指すエンジニア",
+      "date": "2025-06-13"
     }
   }
 };
