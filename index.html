@@ -30,8 +30,94 @@
         blog("./blog_system/"); // 「お知らせ」を表示する。
     </script>
     <!--  -->
-
     <style>
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .video-thumb {
+            flex: 1 1 calc(33.333% - 10px);
+            /* PC時: 横3列 */
+            max-width: 350px;
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #000;
+            transition: transform 0.2s;
+            /* ホバーで少し拡大 */
+        }
+
+        .video-thumb:hover {
+            transform: scale(1.05);
+        }
+
+        .video-thumb img {
+            width: 100%;
+            height: 160px;
+            /* 高さを統一 */
+            object-fit: cover;
+            /* 中央を基準にトリミング */
+            display: block;
+        }
+
+        .video-title {
+            margin-top: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #000;
+            line-height: 1.2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            /* タイトルが長すぎる場合に省略 */
+        }
+
+        @media (max-width: 600px) {
+            .video-thumb {
+                flex: 1 1 calc(50% - 10px);
+                /* 横2列 */
+                max-width: 200px;
+                /* 最大幅を指定して画面端に余白 */
+            }
+
+            .video-thumb img {
+                height: 120px;
+                /* 少し小さく */
+            }
+
+            .video-title {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* 変更: サムネ右下に再生時間を表示するための追加 */
+        .thumb-wrapper {
+            position: relative;
+            /* 画像の上に絶対配置できるようにする */
+            display: block;
+        }
+
+        .video-duration {
+            position: absolute;
+            /* 画像の右下に固定 */
+            bottom: 5px;
+            right: 5px;
+            background: rgba(0, 0, 0, 0.7);
+            /* 半透明黒背景 */
+            color: #fff;
+            /* 白文字 */
+            font-size: 0.75rem;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+
+
+
+
         .red {
             margin: 0 20px 40px;
             padding: 1em 2em;
@@ -44,6 +130,7 @@
             font-size: 114%;
         }
     </style>
+
 
 
 </head>
@@ -63,9 +150,9 @@
         </h1>
     </header>
     <div style="item-align: right;">
-        <div class="fixed-text" >卒業生の証明書発行依頼は<a href="certificate.html" class="link">こちら↗</a>
+        <div class="fixed-text">卒業生の証明書発行依頼は<a href="certificate.html" class="link">こちら↗</a>
         </div>
-        <div class="fixed-text2">オープンキャンパス<br>工学部説明会動画は <a href="blog_system/20240808_1526/index.html" class="link">こちら↗</a>
+        <div class="fixed-text2">オープンキャンパス<br>工学部説明会動画は <a href="https://youtu.be/7DW1PdRHs4I" class="link">こちら↗</a>
         </div>
     </div>
 
@@ -126,30 +213,67 @@
         <div style="padding-top: 50px;"></div>
 
 
-        <div style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
+        <div style="position: relative; width: 100%; min-height: 100vh; overflow: hidden;">
             <div
                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('img/open.jpg') no-repeat center center/cover; opacity: 0.4; z-index: -1;">
             </div>
             <div
                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <!-- ここに文字や動画などを配置します -->
+
                 <div style="padding-top: 50px;"></div>
-                <div class="red">令和6年度福岡大学オープンキャンパス工学部説明会</div>
+                <div class="red">令和7年度福岡大学オープンキャンパス工学部説明会</div>
 
-                <div class="youtube-ratio">
-                    <iframe  width="560" height="315" src="https://www.youtube.com/embed/7jfoZYq9hjU?si=_J65VpY33u3uhwp5"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="movie"></iframe>
+
+
+                <div class="video-container">
+                    <a class="video-thumb" href="https://youtu.be/7DW1PdRHs4I?si=9Q6JmDKnkrPQPRYw" target="_blank">
+                        <!-- 変更: 再生時間表示のため wrapper を追加 -->
+                        <div class="thumb-wrapper">
+                            <img src="img/youtube/opening.webp" alt="">
+                            <!-- 追加: サムネ右下に再生時間 -->
+                            <span class="video-duration">12:29</span>
+                        </div>
+                    </a>
+                
+                    <a class="video-thumb" href="https://youtu.be/usaJdSe7uhQ?si=GoZ7DMj-bu88annz" target="_blank">
+                        <div class="thumb-wrapper">
+                            <img src="img/youtube/feature.webp" alt="">
+                            <span class="video-duration">6:41</span>
+                        </div>
+                    </a>
+                
+                    <a class="video-thumb" href="https://youtu.be/0XUw9qwhCZs?si=kEM3eYsV68n-clO8" target="_blank">
+                        <div class="thumb-wrapper">
+                            <img src="img/youtube/support.webp" alt="">
+                            <span class="video-duration">2:56</span>
+                        </div>
+                    </a>
+                
+                    <a class="video-thumb" href="https://youtu.be/g_o9WEX5P4Y?si=HH607dId6_hNchuc" target="_blank">
+                        <div class="thumb-wrapper">
+                            <img src="img/youtube/career.webp" alt="">
+                            <span class="video-duration">9:09</span>
+                        </div>
+                    </a>
+                
+                    <a class="video-thumb" href="https://youtu.be/sdrbPoTgnU8?si=RhxxEa8yoF9C87B5" target="_blank">
+                        <div class="thumb-wrapper">
+                            <img src="img/youtube/mono.webp" alt="">
+                            <span class="video-duration">2:06</span>
+                        </div>
+                    </a>
+                
+                    <a class="video-thumb" href="https://youtu.be/EkfDkaNCNV8?si=tKXbnUh3BvADUsrN" target="_blank">
+                        <div class="thumb-wrapper">
+                            <img src="img/youtube/uni.webp" alt="">
+                            <span class="video-duration">12:28</span>
+                        </div>
+                    </a>
                 </div>
-
-             
-           
                 
                 <div style="padding-top: 50px;"></div>
             </div>
         </div>
-
 
 
 
@@ -327,7 +451,8 @@
                     <div style="padding-top:50px;"></div>
                     <div class="col-md-12" style="padding-left: 0;">
                         <div class="title" style="font-weight:700; text-align: left;">
-                            <span>全国規模の</span><span>大企業</span><span>から</span><span>地元の</span><span>企業</span><span>まで</span><span>幅広く</span><span>就職</span><span>(令和６年度末の就職率 97.7%)</span>
+                            <span>全国規模の</span><span>大企業</span><span>から</span><span>地元の</span><span>企業</span><span>まで</span><span>幅広く</span><span>就職</span><span>(令和６年度末の就職率
+                                97.7%)</span>
                         </div>
 
                         <div style="padding-top: 50px;"></div>

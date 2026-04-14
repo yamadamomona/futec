@@ -48,7 +48,7 @@
     <div id="container" style="background-color: #ffffff;">
         <div class="side-padding">
             <div style="padding-top:50px;" id="shigen"></div>
-            <div class="title" style="font-weight:700; text-align: left;" >
+            <div class="title" style="font-weight:700; text-align: left;">
                 資源循環・環境グループ　教員紹介
             </div>
             <div style="padding-top:50px;"></div>
@@ -60,24 +60,25 @@
                         <div class="row">
                             <script>
 
-                                function teacher({ name, shikaku, img }) {
+                                function teacher({ name, shikaku, senmon, color, img, description, url }) {
                                     var text = `
                     
                                             <div class="col-md-4 col-sm-6 col-6"  >
                     
                                             
-                                                                                               
-                                                <div style="max-width:200px; margin: 0 auto; box-shadow:   0 0 30px #EEEEF0;text-align:left;">
+                                                <a  href="teacher.html?ti=${url}">
+                                               
+                                                <div style="max-width:200px; margin: 0 auto; background-color:${color};box-shadow:   0 0 30px #EEEEF0;text-align:left;">
                                                     <div style="background-image: url(${img}); width:100%; padding-top: 100%; background-position: center; background-size: contain;background-repeat: no-repeat; ">
                                                     </div>
-                                                </div>
+                                                </div></a>
                                                 <br> 
                                                 
                                                 <div style="max-width:200px; margin: 0 auto;text-align:left;">
                                                 <h5 style="text-align: left;">
                                                     <b>${name} <font size="2">${shikaku}</font></b>
                                                 </h5>
-                                              
+                                                <font size="2" style="text-align: left;color: rgba(85, 85, 85, 0.95);">${senmon}</font>
                                                 </div>
                     
                                                 
@@ -93,50 +94,58 @@
                                 teacher({
                                     name: "田浦 扶充子",
                                     shikaku: "准教授",
+                                    senmon: "環境マネジメント<br>",
+                                    color: "white",
                                     img: "../img/staff/tec/taura.webp",
+                                    description: "自然資源を活用した減災・防災に関する研究を行って言います。<br>持続可能で豊かなまち、地域づくりに向けて一緒に学び、取り組んで行きましょう。<br> 工学的特徴の理解は抗力の低減、混合促進など の産業界への応用が期待されている分野です。特 にフラクタル構造の物体後方に発達する乱れについて研究しています。",
+                                    url: "taura",
                                 });
+
 
                                 teacher({
                                     name: "武下 俊宏",
                                     shikaku: "准教授",
+                                    senmon: "環境化学<br>環境微生物学<br>",
+                                    color: "white",
                                     img: "../img/staff/tec/takeshita.webp",
+                                    description: "微生物学や化学の知識を駆使して環境問題の解決に取り組みます。<br>未利用物質の有効利用方法を考案したり有害化学物質の低害化方法を見出したりする研究を行っています。<br>得られた研究成果は、最終的に環境技術として実用化することを目指しています。<br>",
+                                    url: "takeshita",
                                 });
 
 
-                               
-                           
-                                teacher({
-                                    name: "田中 綾子",
-                                    shikaku: "教授",
-                                    img: "../img/staff/tec/tanaka.webp",
-                                });
-                                teacher({
-                                    name: "柳橋 泰生",
-                                    shikaku: "教授",
-                                    img: "../img/staff/tec/yanaginashi.webp",
-                                });
+
+
+                          
 
 
                                 teacher({
                                     name: "山本 俊浩",
                                     shikaku: "教授",
+                                    senmon: "資源循環工学<br>複合材料学<br>",
+                                    color: "white",
                                     img: "../img/staff/tec/yamamoto.webp",
+                                    description: "環境にやさしい材料の強度評価について研究を行っています。<br>具体的には航空・宇宙分野、自動車、船舶等の運輸部門において燃費の向上に役立つことで、脱炭素社会実現に貢献している軽くて強い繊維強化プラスチック及びそのリサイクル材が安心安全に使用できるように破壊基準の確立に取り組んでいます。<br>",
+                                    url: "yamamoto",
                                 });
                                 teacher({
                                     name: "為田 一雄",
-                                    shikaku: "准教授",
+                                    shikaku: "教授",
+                                    senmon: "廃棄物処理処分<br>",
+                                    color: "white",
                                     img: "../img/staff/tec/tameda.webp",
+                                    description: "1.最終処分場安定化（洗浄処理など）に関する研究<br>  2.飛灰薬剤処理の影響に関する研究<br>  3.副生塩類リサイクル研究<br>  4.既存最終処分場評価に関する研究<br>  5.埋立再生工法研究<br>  6.廃棄物管理のトータルシステムに関する研究<br>  7.気候変動に対応した浸出水処理システムに関する研究<br>　8.海面埋立最終処分場早期安定化に関する研究<br>",
+                                    url: "tameda",
                                 });
 
-                            
+
 
                             </script>
                             <br><br>
                         </div>
-                          
-                      
-                      
-                       
+
+
+
+
                     </div>
 
 
@@ -145,7 +154,7 @@
 
             </div>
             <div style="padding-top:50px;" id="zugaku"></div>
-            <div class="title" style="font-weight:700; text-align: left;" >
+            <div class="title" style="font-weight:700; text-align: left;">
                 図学教室　教員紹介
             </div>
             <div style="padding-top:50px;"></div>
@@ -157,24 +166,26 @@
                         <div class="row">
                             <script>
 
-                                function teacher({ name, shikaku, img }) {
+
+                                function teacher({ name, shikaku, senmon, color, img, description, url }) {
                                     var text = `
                     
                                             <div class="col-md-4 col-sm-6 col-6"  >
                     
                                             
-                                                                                               
-                                                <div style="max-width:200px; margin: 0 auto; box-shadow:   0 0 30px #EEEEF0;text-align:left;">
+                                                <a  href="teacher.html?ti=${url}">
+                                               
+                                                <div style="max-width:200px; margin: 0 auto; background-color:${color};box-shadow:   0 0 30px #EEEEF0;text-align:left;">
                                                     <div style="background-image: url(${img}); width:100%; padding-top: 100%; background-position: center; background-size: contain;background-repeat: no-repeat; ">
                                                     </div>
-                                                </div>
+                                                </div></a>
                                                 <br> 
                                                 
                                                 <div style="max-width:200px; margin: 0 auto;text-align:left;">
                                                 <h5 style="text-align: left;">
                                                     <b>${name} <font size="2">${shikaku}</font></b>
                                                 </h5>
-                                              
+                                                <font size="2" style="text-align: left;color: rgba(85, 85, 85, 0.95);">${senmon}</font>
                                                 </div>
                     
                                                 
@@ -187,25 +198,34 @@
                                     document.write(text);
                                 }
 
+
                                 teacher({
                                     name: "酒井 幸仁",
                                     shikaku: "准教授",
+                                    senmon: "図形・形状処理工学<br>情報工学<br>ヒューマンインタフェース<br>",
+                                    color: "white",
                                     img: "../img/staff/tec/sakai.webp",
-                                  
+                                    description: "4 次元空間を直感的に理解するための研究をしています。<br>もし人が高次元の空間を理解できるようになったら、そんなことを考えながら 4 次元グラフィックスの一般化や 4 次元インタラクションの実現に取り組んでいます。<br>",
+                                    url: "k_sakai",
+
                                 });
                                 teacher({
                                     name: "奈尾 信英",
                                     shikaku: "准教授",
+                                    senmon: "",
+                                    color: "white",
                                     img: "../img/staff/tec/nao.webp",
+                                    description: "",
+                                    url: "",
                                 });
                             </script>
                             <br><br>
                         </div>
-                   
+
                         <div class="row">
                             <script>
 
-                                function assistant({ name, shikaku}) {
+                                function assistant({ name, shikaku }) {
                                     var text = `
                     
                                            
@@ -231,13 +251,13 @@
                                 }
 
 
-                           
+
 
 
 
                             </script>
-                            <br><br>  <br><br>
-                            
+                            <br><br> <br><br>
+
                         </div>
                     </div>
 
@@ -248,7 +268,7 @@
             </div>
 
             <div style="padding-top:50px;" id="mono"></div>
-            <div class="title" style="font-weight:700; text-align: left;" >
+            <div class="title" style="font-weight:700; text-align: left;">
                 <span>ものづくりセンター　</span> <span>教員紹介</span>
             </div>
             <div style="padding-top:50px;"></div>
@@ -260,24 +280,26 @@
                         <div class="row">
                             <script>
 
-                                function teacher({ name, shikaku, img }) {
+
+                                function teacher({ name, shikaku, senmon, color, img, description, url }) {
                                     var text = `
                     
                                             <div class="col-md-4 col-sm-6 col-6"  >
                     
                                             
-                                                                                               
-                                                <div style="max-width:200px; margin: 0 auto; box-shadow:   0 0 30px #EEEEF0;text-align:left;">
+                                                <a  href="teacher.html?ti=${url}">
+                                               
+                                                <div style="max-width:200px; margin: 0 auto; background-color:${color};box-shadow:   0 0 30px #EEEEF0;text-align:left;">
                                                     <div style="background-image: url(${img}); width:100%; padding-top: 100%; background-position: center; background-size: contain;background-repeat: no-repeat; ">
                                                     </div>
-                                                </div>
+                                                </div></a>
                                                 <br> 
                                                 
                                                 <div style="max-width:200px; margin: 0 auto;text-align:left;">
                                                 <h5 style="text-align: left;">
                                                     <b>${name} <font size="2">${shikaku}</font></b>
                                                 </h5>
-                                              
+                                                <font size="2" style="text-align: left;color: rgba(85, 85, 85, 0.95);">${senmon}</font>
                                                 </div>
                     
                                                 
@@ -293,16 +315,20 @@
                                 teacher({
                                     name: "熊丸 憲男",
                                     shikaku: "准教授",
+                                    senmon: "工学教育<br>",
+                                    color: "white",
                                     img: "../img/staff/tec/kumamaru.webp",
-                                  
+                                    description: "ものづくり教育を行ったときの、学習効果を高める研究を行っています。<br>小中学生だけでなく、大学生や社会人を含めて楽しくものづくりを行い、知識や創造力を高めていくことを目指しています。<br>",
+                                    url: "kumamaru",
+
                                 });
-                            
+
 
                             </script>
                             <br><br>
                         </div>
-                      
-                       
+
+
                     </div>
 
 

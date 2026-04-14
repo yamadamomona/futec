@@ -444,7 +444,7 @@ document.addEventListener("DOMContentLoaded", function () {
             teacherBox.innerHTML = teacher({
                 parent: "introduce-tk.html",
                 name: "加藤 貴史",
-                shikaku: "准教授",
+                shikaku: "教授",
                 senmon: "化学工学<br>無機材料工学",
                 color: "white",
                 img: "../img/staff/tk/kato.webp",
@@ -690,16 +690,31 @@ document.addEventListener("DOMContentLoaded", function () {
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=4df789ae34f4191c520e17560c007669&lang=ja",
             });
             break;
-        case "ono":
+
+            case "t_ono":
+                teacherBox.innerHTML = teacher({
+                    parent: "introduce-tl.html",
+                    name: "小野 貴継",
+                    shikaku: "教授",
+                    senmon: "システムアーキテクチャ<br>新原理コンピューティング",
+                    color: "white",
+                    img: "../img/staff/tl/t_ono.webp",
+                    description: "従来の計算機システムの性能・効率向上に加え、デバイスから回路、アーキテクチャまでを俯瞰し、新しい計算原理に基づく高性能・低消費電力な情報処理システムを探究しています。",
+                    url: "t_ono",
+                    link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=506ab0505908f6da520e17560c007669&lang=ja",
+                });
+                break;
+
+        case "s_ono":
             teacherBox.innerHTML = teacher({
                 parent: "introduce-tl.html",
                 name: "小野 晋太郎",
                 shikaku: "准教授",
                 senmon: "センシング工学<br>画像情報工学<br>モビリティ工学",
                 color: "white",
-                img: "../img/staff/tl/ono.webp",
+                img: "../img/staff/tl/s_ono.webp",
                 description: "実空間のセンシング、情報抽出、シーン理解、可視化などの技術を軸とし、特に人や物の移動・交通に関するイノベーション(広義のITS,Intelligent Transport Systems)を専門としています。",
-                url: "ono",
+                url: "s_ono",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=0945eb5356728f15520e17560c007669&lang=ja",
             });
             break;
@@ -886,6 +901,94 @@ document.addEventListener("DOMContentLoaded", function () {
                 description: "日本語文の解析システムの研究を中心に行っています。また、その技術を応用したアプリケーションシステムの開発等も行っています。",
                 url: "yoshimura",
                 link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=f98fe49666e86cac520e17560c007669&lang=ja",
+            });
+            break;
+
+
+
+
+
+
+        case "taura":
+            teacherBox.innerHTML = teacher({
+                parent: "introduce-tec.html",
+                name: "田浦 扶充子",
+                shikaku: "准教授",
+                senmon: "環境マネジメント",
+                color: "white",
+                img: "../img/staff/tec/taura.webp",
+                description: "自然資源を活用した減災・防災に関する研究を行って言います。<br>持続可能で豊かなまち、地域づくりに向けて一緒に学び、取り組んで行きましょう。<br>",
+                url: "taura",
+                link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=2416017ed2ced393520e17560c007669&lang=ja",
+            });
+            break;
+
+
+        case "takeshita":
+            teacherBox.innerHTML = teacher({
+                parent: "introduce-tec.html",
+                name: "武下 俊宏",
+                shikaku: "准教授",
+                senmon: "環境環境化学<br> 環境微生物学<br>マネジメント",
+                color: "white",
+                img: "../img/staff/tec/takeshita.webp",
+                description: "微生物学や化学の知識を駆使して環境問題の解決に取り組みます。<br>未利用物質の有効利用方法を考案したり有害化学物質の低害化方法を見出したりする研究を行っています。<br>得られた研究成果は、最終的に環境技術として実用化することを目指しています。<br>",
+                url: "takeshita",
+                link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=e64cd94f27935629520e17560c007669&lang=ja",
+            });
+            break;
+
+        case "yamamoto":
+            teacherBox.innerHTML = teacher({
+                parent: "introduce-tec.html",
+                name: "山本 俊浩",
+                shikaku: "教授",
+                senmon: "資源循環工学<br>複合材料学<br>",
+                color: "white",
+                img: "../img/staff/tec/yamamoto.webp",
+                description: "環境にやさしい材料の強度評価について研究を行っています。<br>具体的には航空・宇宙分野、自動車、船舶等の運輸部門において燃費の向上に役立つことで、脱炭素社会実現に貢献している軽くて強い繊維強化プラスチック及びそのリサイクル材が安心安全に使用できるように破壊基準の確立に取り組んでいます。<br>",
+                url: "yamamoto",
+                link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=143180a1d06b5b54520e17560c007669&lang=ja",
+            });
+            break;
+
+        case "tameda":
+            teacherBox.innerHTML = teacher({
+                parent: "introduce-tec.html",
+                name: "為田 一雄",
+                shikaku: "准教授",
+                senmon: "廃棄物処理処分<br>",
+                color: "white",
+                img: "../img/staff/tec/tameda.webp",
+                description: "1.最終処分場安定化（洗浄処理など）に関する研究<br>  2.飛灰薬剤処理の影響に関する研究<br>  3.副生塩類リサイクル研究<br>  4.既存最終処分場評価に関する研究<br>  5.埋立再生工法研究<br>  6.廃棄物管理のトータルシステムに関する研究<br>  7.気候変動に対応した浸出水処理システムに関する研究<br>8.海面埋立最終処分場早期安定化に関する研究<br>",
+                url: "tameda",
+                link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=7e0ac5355be5a814520e17560c007669&lang=ja",
+            });
+            break;
+        case "k_sakai":
+            teacherBox.innerHTML = teacher({
+                parent: "introduce-tec.html",
+                name: "酒井 幸仁",
+                shikaku: "准教授",
+                senmon: "図形・形状処理工学<br>情報工学<br>ヒューマンインタフェース<br>",
+                color: "white",
+                img: "../img/staff/tec/sakai.webp",
+                description: "4 次元空間を直感的に理解するための研究をしています。<br>もし人が高次元の空間を理解できるようになったら、そんなことを考えながら 4 次元グラフィックスの一般化や 4 次元インタラクションの実現に取り組んでいます。<br>",
+                url: "k_sakai",
+                link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=f1955b1b580e017a520e17560c007669&lang=ja",
+            });
+            break;
+        case "kumamaru":
+            teacherBox.innerHTML = teacher({
+                parent: "introduce-tec.html",
+                name: "熊丸 憲男",
+                shikaku: "准教授",
+                senmon: "工学教育<br>",
+                color: "white",
+                img: "../img/staff/tec/kumamaru.webp",
+                description: "ものづくり教育を行ったときの、学習効果を高める研究を行っています。<br>小中学生だけでなく、大学生や社会人を含めて楽しくものづくりを行い、知識や創造力を高めていくことを目指しています。<br>",
+                url: "kumamaru",
+                link: "https://kenkyusha-db.fukuoka-u.ac.jp/search/detail?systemId=7f82490d64637d43520e17560c007669&lang=ja",
             });
             break;
 
